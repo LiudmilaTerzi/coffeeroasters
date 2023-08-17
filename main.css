@@ -1,20 +1,113 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&display=swap");
+* {
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 header {
-  color: #333D4B;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #fff;
+  padding: 10px 20px;
+  font-family: "Barlow", sans-serif;
 }
-header i {
+header .icon {
+  width: 40px;
+  height: 40px;
+}
+header .brand {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+header .fa-bars {
+  font-size: 24px;
   color: #333D4B;
-  font-size: 20px;
-  display: block;
-}
-header .navigation {
+  cursor: pointer;
   display: none;
+}
+header .navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header .navigation ul li {
+  margin: 0 15px;
+}
+header .navigation ul li a {
+  text-decoration: none;
+  color: #83888F;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header .navigation ul li a:hover {
+  color: white;
+}
+
+.main-content {
+  position: relative;
+  background-image: url("./assets/home/Bitmap.png");
+  border-radius: 10px;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+}
+.main-content .main-title {
+  font-size: 3rem;
+  color: #FEFCF7;
+  font-family: "Fraunces", sans-serif;
+  text-shadow: 0 0 1px black;
+  margin-bottom: 20px;
+}
+.main-content .info {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+@media (max-width: 620px) {
+  header {
+    background-color: #fff;
+  }
+  header .logo {
+    width: 163px;
+    height: 18px;
+  }
+  header .fa-bars {
+    color: #333D4B;
+    display: inline-block;
+  }
+  header .navigation {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    background-color: #333;
+    transition: left 0.3s ease-in-out;
+  }
+  header .navigation ul {
+    flex-direction: column;
+  }
+  header .navigation ul li {
+    margin: 10px 0;
+  }
+  header header.open-menu .navigation {
+    left: 0;
+  }
+  .main-content {
+    margin: auto;
+    width: 450px;
+    height: 600px;
+  }
+  .main-title {
+    font-size: 2rem;
+  }
+  .info {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */
