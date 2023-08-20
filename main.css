@@ -4,64 +4,77 @@
   box-sizing: border-box;
 }
 
-header {
+html, body {
+  background-color: #F2F2F2;
+}
+
+body {
+  margin: 30px 50px 50px;
+}
+body header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
-  color: #fff;
   padding: 10px 20px;
   font-family: "Barlow", sans-serif;
 }
-header .icon {
-  width: 40px;
-  height: 40px;
+body header .logo {
+  width: 236px;
+  height: 26px;
 }
-header .fa-bars {
+body header .fa-bars {
   font-size: 24px;
   color: #333D4B;
   cursor: pointer;
   display: none;
 }
-header .navigation ul {
+body header .navigation ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
-header .navigation ul li {
+body header .navigation ul li {
   margin: 0 15px;
 }
-header .navigation ul li a {
+body header .navigation ul li a {
   text-decoration: none;
   color: #83888F;
   text-transform: uppercase;
   font-weight: bold;
 }
-header .navigation ul li a:hover {
+body header .navigation ul li a:hover {
   color: white;
 }
-
-.main-content {
-  position: relative;
+body .main-content {
   background-image: url("./assets/home/Bitmap.png");
   border-radius: 10px;
   background-position: center;
-  text-align: center;
-  margin-left: 5px;
-  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  margin-top: 5vh;
 }
-.main-content .main-title {
-  font-size: 40px;
+body .main-content .content {
+  display: flex;
+  flex-direction: column;
+  width: 37.75%;
+  height: 60.2%;
+  margin-left: 5vw;
+}
+body .main-content .content .main-title {
+  font-size: 72px;
   color: #FEFCF7;
   font-family: "Fraunces", sans-serif;
   text-shadow: 0 0 1px black;
 }
-.main-content .info {
+body .main-content .content .info {
+  font-size: 16px;
   color: #FEFCF7;
   font-family: "Barlow", sans-serif;
 }
-.main-content .create-plan-button {
+body .create-plan-button {
   display: inline-block;
   margin-top: 20px;
   width: 217px;
@@ -77,37 +90,177 @@ header .navigation ul li a:hover {
   line-height: 56px;
   transition: background-color 0.3s ease;
 }
-.main-content .create-plan-button:hover {
+body .create-plan-button:hover {
   background-color: #095957;
 }
-
-.coffee-type {
+body .coffee-type {
   color: #333D4B;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 5vw;
 }
-.coffee-type .our-collection {
+body .coffee-type .our-collection {
   background: linear-gradient(to bottom, #83888F, transparent);
   -webkit-background-clip: text;
   color: transparent;
   font-weight: bold;
+  font-size: 150px;
 }
-.coffee-type .coffee-name {
+body .coffee-type .coffee-selection {
+  display: flex;
+  gap: 1vw;
+  margin-top: -200px;
+}
+body .coffee-type .coffee-selection .coffee-type1 {
+  width: 255px;
+}
+body .coffee-type .coffee-name {
   font-family: "Fraunces", sans-serif;
   font-size: 24px;
 }
-.coffee-type .coffee-info {
+body .coffee-type .coffee-info {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+}
+body .why-us {
+  position: relative;
+  width: 100%;
+  background-color: #2C343E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20vh;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #2C343E;
+  height: 577px;
+}
+body .why-us .why {
+  color: #FEFCF7;
+  width: 40%;
+  margin-top: 5vh;
+}
+body .why-us .why h2 {
+  font-size: "Fraunces", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+}
+body .why-us .why p {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+body .why-us .arguments {
+  width: 100%;
+  position: absolute;
+  top: 65%;
+  transform: translateY(50%);
+}
+body .why-us .arguments .argument-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5vw;
+  margin: -10% 60px 0;
+}
+body .why-us .arguments .argument {
+  background-color: #0E8784;
+  border-radius: 5px;
+  color: #FEFCF7;
+  width: 350px;
+  height: 382px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .why-us .arguments .argument h3 {
+  margin-top: 5vh;
+  font-family: "Fraunces", sans-serif;
+  font-size: 24px;
+}
+body .why-us .arguments .argument p {
   font-family: "Barlow", sans-serif;
   font-size: 15px;
+  width: 80%;
+}
+body .how {
+  position: relative;
+  top: 50vh;
+  width: 82%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 9%;
+  gap: 25px;
+}
+body .how .line-container {
+  display: flex;
+  align-items: center;
+}
+body .how .line-container .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #0E8784;
+  background-color: #FEFCF7;
+}
+body .how .line-container .line {
+  flex-grow: 1;
+  height: 4px;
+  background-color: #FDD6BA;
+  border: 1px solid #FDD6BA;
+  box-shadow: 0 2px 4px #D8D8D8;
+}
+body .how .do-steps {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+}
+body .how .do-steps:first-child {
+  width: 33%;
+}
+body .how .do-steps .step {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body .how .do-steps .step p {
+  width: 80%;
+}
+body .how h3, body .how .number, body .how .step-1 {
+  font-family: "Fraunces", sans-serif;
+  font-weight: bold;
+}
+body .how h3 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888F;
+}
+body .how .number {
+  font-size: 72px;
+  color: #FDD6BA;
+  line-height: 72px;
+}
+body .how .step-1 {
+  font-size: 32px;
+  color: #333D4B;
+  line-height: 36px;
+}
+body footer {
+  position: relative;
+  top: 90vh;
+  display: flex;
+  background-color: #2C343E;
 }
 
 @media (max-width: 480px) {
   body {
-    margin: 0 20px;
-  }
-  body header {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #fff;
+    margin: 30px 20px 50px;
   }
   body header .logo {
     position: absolute;
@@ -143,121 +296,210 @@ header .navigation ul li a:hover {
   }
   body .main-content {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/home/Bitmap.png");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: auto;
+    margin-top: 30px;
     width: 100%;
     height: 500px;
     background-size: cover;
     background-position: 68% 20%;
   }
-  body .main-content .main-title {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    right: 10%;
-    font-size: 36px;
+  body .main-content .content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 85.3%;
+    height: 60.2%;
+    margin: auto;
   }
-  body .main-content .info {
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    right: 10%;
+  body .main-content .content .main-title {
+    font-size: 36px;
+    margin-top: 20vh;
+  }
+  body .main-content .content .info {
     font-size: 15px;
   }
-  body .main-content .create-plan-button {
-    position: absolute;
-    bottom: 20%;
-  }
-  .coffee-type {
+  body .coffee-type {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5vh;
   }
-  .coffee-type .our-collection {
-    font-size: 48px;
+  body .coffee-type .our-collection {
+    font-size: 40px;
   }
-  .coffee-type .coffee-type1 {
+  body .coffee-type .coffee-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  body .coffee-type .coffee-selection .coffee-type1 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .coffee-type .coffee-img {
+  body .coffee-type .coffee-selection .coffee-img {
     width: 40vw;
     height: -moz-fit-content;
     height: fit-content;
     margin-top: 5vh;
   }
-  .coffee-type .coffee-name {
+  body .coffee-type .coffee-selection .coffee-name {
     font-size: 24px;
   }
-  .coffee-type .coffee-info {
+  body .coffee-type .coffee-selection .coffee-info {
     width: 75vw;
     text-align: center;
     font-size: 15px;
   }
-  .why-us {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5vh;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #2C343E;
+  body .why-us {
+    width: 90vw;
     height: 900px;
-    position: absolute;
-    left: 10%;
+    position: relative;
+    margin-top: 5vh;
   }
-  .why-us .why {
-    color: #FEFCF7;
+  body .why-us .why {
     margin: 2vh;
+    width: 80%;
   }
-  .why-us .why h2 {
+  body .why-us .why h2 {
     font-family: "Fraunces", sans-serif;
     font-size: 28px;
+    line-height: 28px;
+    margin-top: 5vh;
   }
-  .why-us .why p {
+  body .why-us .why p {
     width: 70vw;
     font-family: "Barlow", sans-serif;
     font-size: 15px;
+    line-height: 25px;
   }
-  .arguments {
+  body .why-us .arguments {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
+    width: 100%;
+    position: absolute;
+    top: -45%;
     z-index: 2;
-    top: 30vh;
   }
-  .arguments .argument-1 .argument {
+  body .why-us .arguments .argument-1 {
+    flex-direction: column;
+  }
+  body .why-us .arguments .argument-1.argument-1:first-child {
+    margin-top: 2vh;
+  }
+  body .why-us .arguments .argument-1 .argument {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 5px;
-    width: 65vw;
-    height: 382px;
-    margin-top: 5vh;
-    background-color: #0E8784;
-    color: #FEFCF7;
+    width: 75vw;
+    height: 380px;
+    margin-top: 3vh;
     text-align: center;
   }
-  .arguments .argument-1 .argument img {
+  body .why-us .arguments .argument-1 .argument img {
     width: 70px;
     height: 70px;
     margin-top: 10vh;
   }
-  .arguments .argument-1 .argument h3 {
-    margin-top: 5vh;
+  body .how {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 80vh;
+    text-align: center;
+  }
+  body .how .line-container {
+    display: none;
+  }
+  body .how h3, body .how .number, body .how .step-1 {
     font-family: "Fraunces", sans-serif;
     font-size: 24px;
+    color: #83888F;
   }
-  .arguments .argument-1 .argument p {
+  body .how .do-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  body .how .do-steps .step {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  body .how .do-steps .step .number, body .how .do-steps .step .step-1 {
+    font-size: 72px;
+    color: #FDD6BA;
+    font-weight: bold;
+  }
+  body .how .do-steps .step .step-1 {
+    color: #333D4B;
+    font-size: 28px;
+  }
+  body .how .do-steps .step .step-2 {
     font-family: "Barlow", sans-serif;
     font-size: 15px;
-    width: 75%;
+    font-weight: bold;
+    width: 95%;
+  }
+  body .how .create-plan-button {
+    align-self: center;
+    margin-top: 10vh;
+  }
+  body footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    position: relative;
+    margin-top: 10vh;
+    height: 346px;
+    background-color: #2C343E;
+  }
+  body footer img {
+    width: 66.6%;
+  }
+  body footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2vh;
+  }
+  body footer ul li {
+    margin: 0 15px;
+  }
+  body footer ul li a {
+    text-decoration: none;
+    color: #83888F;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  body footer ul li a:hover {
+    color: white;
+  }
+  body footer .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36.7%;
+    height: 24px;
+  }
+  body footer .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  body footer .social-icons a img {
+    width: 24px;
+    height: 24px;
   }
 }/*# sourceMappingURL=main.css.map */
