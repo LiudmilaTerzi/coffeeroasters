@@ -9,45 +9,10 @@ html, body {
 }
 
 body {
-  margin: 30px 50px 50px;
-}
-body header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  font-family: "Barlow", sans-serif;
-}
-body header .logo {
-  width: 236px;
-  height: 26px;
-}
-body header .fa-bars {
-  font-size: 24px;
-  color: #333D4B;
-  cursor: pointer;
-  display: none;
-}
-body header .navigation ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-body header .navigation ul li {
-  margin: 0 15px;
-}
-body header .navigation ul li a {
-  text-decoration: none;
-  color: #83888F;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-body header .navigation ul li a:hover {
-  color: white;
+  margin: 30px 50px 120px;
 }
 body .main-content {
-  background-image: url("./assets/home/Bitmap.png");
+  background-image: url("../assets/home/Bitmap.png");
   border-radius: 10px;
   background-position: center;
   background-repeat: no-repeat;
@@ -190,21 +155,21 @@ body .why-us .arguments .argument p {
   width: 80%;
 }
 body .how {
-  position: relative;
-  top: 50vh;
+  margin-top: 50vh;
   width: 82%;
   display: flex;
   flex-direction: column;
-  margin: 0 9%;
+  margin-left: 9%;
   gap: 25px;
 }
 body .how .line-container {
   display: flex;
   align-items: center;
+  width: 69.33%;
 }
 body .how .line-container .circle {
-  width: 20px;
-  height: 20px;
+  width: 31px;
+  height: 31px;
   border-radius: 50%;
   border: 2px solid #0E8784;
   background-color: #FEFCF7;
@@ -219,18 +184,14 @@ body .how .line-container .line {
 body .how .do-steps {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: start;
-}
-body .how .do-steps:first-child {
-  width: 33%;
 }
 body .how .do-steps .step {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-}
-body .how .do-steps .step p {
-  width: 80%;
+  width: 33.333%;
 }
 body .how h3, body .how .number, body .how .step-1 {
   font-family: "Fraunces", sans-serif;
@@ -250,52 +211,20 @@ body .how .step-1 {
   font-size: 32px;
   color: #333D4B;
   line-height: 36px;
+  width: 65%;
 }
-body footer {
-  position: relative;
-  top: 90vh;
-  display: flex;
-  background-color: #2C343E;
+body .how .step-2 {
+  font-size: 16px;
+  line-height: 16px;
+  width: 80%;
 }
 
 @media (max-width: 480px) {
   body {
-    margin: 30px 20px 50px;
-  }
-  body header .logo {
-    position: absolute;
-    left: 5%;
-    width: 165px;
-    height: 20px;
-  }
-  body header .fa-bars {
-    position: absolute;
-    left: 90%;
-    color: #333D4B;
-    display: inline-block;
-    height: 30px;
-    width: 36px;
-    padding-top: 5px;
-  }
-  body header .navigation {
-    position: absolute;
-    top: 70px;
-    left: -100%;
-    width: 100%;
-    background-color: #333;
-    transition: left 0.3s ease-in-out;
-  }
-  body header .navigation ul {
-    flex-direction: column;
-  }
-  body header .navigation ul li {
-    margin: 10px 0;
-  }
-  body header header.open-menu .navigation {
-    left: 0;
+    margin: 30px 20px 10vh;
   }
   body .main-content {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/home/Bitmap.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/home/Bitmap.png");
     margin: auto;
     margin-top: 30px;
     width: 100%;
@@ -410,9 +339,10 @@ body footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 80vh;
+    margin-top: 95vh;
+    margin-left: 0;
     text-align: center;
+    width: 100%;
   }
   body .how .line-container {
     display: none;
@@ -431,6 +361,7 @@ body footer {
     align-items: center;
     text-align: center;
     justify-content: center;
+    width: 100%;
   }
   body .how .do-steps .step .number, body .how .do-steps .step .step-1 {
     font-size: 72px;
@@ -440,66 +371,18 @@ body footer {
   body .how .do-steps .step .step-1 {
     color: #333D4B;
     font-size: 28px;
+    line-height: 28px;
+    width: 100%;
   }
   body .how .do-steps .step .step-2 {
     font-family: "Barlow", sans-serif;
     font-size: 15px;
+    line-height: 25px;
     font-weight: bold;
     width: 95%;
   }
   body .how .create-plan-button {
     align-self: center;
     margin-top: 10vh;
-  }
-  body footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5vh;
-    position: relative;
-    margin-top: 10vh;
-    height: 346px;
-    background-color: #2C343E;
-  }
-  body footer img {
-    width: 66.6%;
-  }
-  body footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 2vh;
-  }
-  body footer ul li {
-    margin: 0 15px;
-  }
-  body footer ul li a {
-    text-decoration: none;
-    color: #83888F;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
-  }
-  body footer ul li a:hover {
-    color: white;
-  }
-  body footer .social-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36.7%;
-    height: 24px;
-  }
-  body footer .social-icons a {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  body footer .social-icons a img {
-    width: 24px;
-    height: 24px;
   }
 }/*# sourceMappingURL=main.css.map */
