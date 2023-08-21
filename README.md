@@ -1,2 +1,0 @@
-# coffeeroasters
-Final Project
