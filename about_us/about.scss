@@ -1,0 +1,210 @@
+@import "../styles/variables.scss";
+
+* {
+    box-sizing: border-box;
+  }
+  html, body {
+    background-color: $body-color;
+  }
+
+//Base style
+
+body {
+    margin: 30px 50px 120px;
+    .about-us {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)), url('../assets/about/coffee/first.jpg');
+        width: 100%;
+        height: 450px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 30px;
+        border-radius: $size10;
+        color: $text-light;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px;
+
+        h2 {
+            font-family: $fraunces-family;
+            font-size: $size40;
+            line-height: $size48;
+            width: 188px;
+        }
+        p {
+            font-family: $barlow-family;
+            font-size: $size16;
+            line-height: $size26;
+            width: 445px;
+        }
+    }
+
+    .commitment {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1110px;
+        margin-left: 85px;
+        margin-top: 20vh;
+
+        img {
+            width: 445px;
+            height: 520px;
+        }
+        .commitment-text {
+            width: 540px;
+            height: 340px;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        margin: 30px 6.4% 10vh;
+        .about-us, .commitment, .quality, .quality-text, 
+        .headquarters, .country {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .commitment, .quality, .headquarters {
+            margin-top: 15vh;
+        } 
+        
+        h2 {
+            font-family: $fraunces-family;
+        }
+
+        p {
+            font-family: $barlow-family;
+        }
+        .about-us {
+            height: 400px;
+            background-size: cover;
+            background-position: 60%;
+            padding: 0;
+            color: $text-light;
+
+            h2, p {
+                width: 85.32%;
+            }
+
+            h2{
+                font-size: $size28;
+                line-height: $size28;
+            }
+
+            p{
+                font-size: $size15;
+                line-height: $size25;
+            }
+        }
+        
+        .commitment {
+            width: 100%;
+            margin-left: 0;
+            font-weight: bold;
+           
+
+            img {
+                width: 100%;
+                height: 400px;
+                border-radius: $size10;
+            }
+            .commitment-text {
+                width: 100%;
+                height: auto;
+
+                h2 {
+                    font-size: $size32;
+                    line-height: $size48;
+                    color: $dark-text;
+                    
+                }
+    
+                p {
+                    font-size: $size15;
+                    line-height: $size25;
+                    color: $dark-text;
+                }
+            }
+           
+        }
+        
+        .quality {
+           position: relative;
+           
+            img {
+                width: 85.32%;
+                z-index: 2;
+               
+            }
+            .quality-text {
+                width: 100%;
+                height: 509px;
+                background-color: $background-color;
+                border-radius: $size10;
+                color: $text-light;
+                justify-content: flex-end;
+                margin-top: -25.5%;
+
+                h2, p {
+                    width: 85.32%;
+                }
+
+                h2 {
+                    font-size: $size28;
+                    line-height: $size28;
+                }
+                p{
+                    font-size: $size15;
+                    line-height: $size25;
+                    margin-bottom: 35px;
+                }
+            }
+        }
+
+        .headquarters {
+            gap: 70px;
+            img {
+                width: 41px;
+                height: 49px;
+            }
+
+            h2 {
+                color: $gradient-color;
+                font-size: $size24;
+                line-height: $size32;
+            }
+
+            .country {
+                gap: 15px;
+            }
+
+            .country p{
+                font-family: $fraunces-family;
+                font-size: $size28;
+                line-height: $size32;
+                color: $dark-text;
+                font-weight: bold;
+            }
+            .adress {
+                font-family: $barlow-family;
+                font-size: $size16;
+                line-height: $size26;
+                color: $dark-text;
+                font-weight: bold;
+            }
+        }
+          
+          
+
+
+    }
+
+}
