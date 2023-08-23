@@ -1,0 +1,126 @@
+@import "../styles/variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: $body-color;
+}
+
+@media (max-width: 480px) {
+    body {
+      margin: 30px 6.4% 10vh;
+    
+        .create-plan, .pick, .steps {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h2, h3 {
+            font-family: $fraunces-family;
+        }
+      
+          p {
+            font-family: $barlow-family;
+        }
+
+        .create-plan {
+            margin-top: 5vh;
+        background-image: url("../assets/create/background.jpg");
+          height: 400px;
+          background-size: cover;
+          background-position: 60%;
+          padding: 0;
+          border-radius: $size10;
+          color: $text-light;
+    
+          h2,
+          p {
+            width: 85.32%;
+          }
+    
+          h2 {
+            font-size: $size28;
+            line-height: $size28;
+          }
+    
+          p {
+            font-size: $size15;
+            line-height: $size25;
+          }
+        }
+
+        .pick {
+            margin-left: -6.4%;
+            width: 375px;
+            height: 1028px;
+            background-color: $background-color;
+            border-radius: $size10;
+            margin-top: 15vh;
+
+            .steps {
+                width: 327px;
+                height: 869px;
+                justify-content: space-evenly;
+
+                .step-1 {
+                    height: 252px;
+
+                    h3, p {
+                        color: $text-light;
+                    }
+
+                    .number {
+                        font-family: $fraunces-family;
+                        font-size: $size72;
+                        line-height: $size72;
+                        font-weight: bold;
+                        color: $light-pink;
+                    }
+
+                    h3 {
+                        font-size: $size28;
+                        line-height: $size32;
+                    }
+
+                    p {
+                        font-size: $size15;
+                        line-height: $size25;
+                    }
+                }
+            }
+        }
+
+        .list {
+            margin-top: 10vh;
+            width: 328px;
+
+            summary {
+                font-family: $fraunces-family;
+                font-size: $size24;
+                font-weight: bold;
+                line-height: $size28;
+                color: $gradient-color;
+                width: 240px;
+                height: 56px;
+            }
+            ul {
+                list-style-type: none;
+            }
+
+        }
+
+     //$("button").click(function() {
+    // if ($(".list").toggle().is(":visible")) {
+    // $("button").text("Show List");
+    // } else {
+    // $("button").text("Hide List");
+    // }
+    // });
+    
+    }
+}   

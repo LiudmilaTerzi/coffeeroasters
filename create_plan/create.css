@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #FEFCF7;
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 30px 6.4% 10vh;
+  }
+  body .create-plan, body .pick, body .steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  body h2, body h3 {
+    font-family: "Fraunces", sans-serif;
+  }
+  body p {
+    font-family: "Barlow", sans-serif;
+  }
+  body .create-plan {
+    margin-top: 5vh;
+    background-image: url("../assets/create/background.jpg");
+    height: 400px;
+    background-size: cover;
+    background-position: 60%;
+    padding: 0;
+    border-radius: 10px;
+    color: #FEFCF7;
+  }
+  body .create-plan h2,
+  body .create-plan p {
+    width: 85.32%;
+  }
+  body .create-plan h2 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  body .create-plan p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  body .pick {
+    margin-left: -6.4%;
+    width: 375px;
+    height: 1028px;
+    background-color: #2C343E;
+    border-radius: 10px;
+    margin-top: 15vh;
+  }
+  body .pick .steps {
+    width: 327px;
+    height: 869px;
+    justify-content: space-evenly;
+  }
+  body .pick .steps .step-1 {
+    height: 252px;
+  }
+  body .pick .steps .step-1 h3, body .pick .steps .step-1 p {
+    color: #FEFCF7;
+  }
+  body .pick .steps .step-1 .number {
+    font-family: "Fraunces", sans-serif;
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: bold;
+    color: #FDD6BA;
+  }
+  body .pick .steps .step-1 h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  body .pick .steps .step-1 p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  body .list {
+    margin-top: 10vh;
+    width: 328px;
+  }
+  body .list summary {
+    font-family: "Fraunces", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #83888F;
+    width: 240px;
+    height: 56px;
+  }
+  body .list ul {
+    list-style-type: none;
+  }
+}/*# sourceMappingURL=create.css.map */
