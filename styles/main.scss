@@ -1,11 +1,12 @@
 
 @import "variables";
+// @import "generals";
 
 * {
   box-sizing: border-box;
 }
 html, body {
-  background-color: #F2F2F2;
+  background-color: $body-color;
 }
 
 
@@ -58,7 +59,7 @@ body {
       font-size: 18px;
       font-weight: bold;
       text-decoration: none;
-      background-color: #0E8784; 
+      background-color: $green-color; 
       color: #FEFCF7; 
       border-radius: 5px;
       text-align: center;
@@ -152,7 +153,7 @@ body {
       }
   
       .argument {
-        background-color: #0E8784;
+        background-color: $green-color;
         border-radius: 5px;
         color: #FEFCF7;
         width: 350px;
@@ -195,7 +196,7 @@ body {
         width: 31px;
         height: 31px;
         border-radius: 50%;
-        border: 2px solid #0E8784;
+        border: 2px solid $green-color;
         background-color: #FEFCF7;
       }
     
@@ -260,11 +261,10 @@ body {
 // Media query for mobile view
 @media (max-width: 480px) {
   body { 
-    margin: 30px 20px 10vh;
+    margin: 30px 6.4% 10vh;
     .main-content {
       background-image: linear-gradient(rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)), url('../assets/home/Bitmap.png');
-      margin: auto;
       margin-top: 30px;
       width: 100%;
       height: 500px;
