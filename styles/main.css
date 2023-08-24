@@ -11,6 +11,13 @@ html, body {
 body {
   margin: 30px 50px 120px;
 }
+body .coffee-type, body .why-us, body .argument, body .argument-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 body .main-content {
   background-image: url("../assets/home/Bitmap.png");
   border-radius: 10px;
@@ -27,16 +34,15 @@ body .main-content .content {
   width: 37.75%;
   height: 60.2%;
   margin-left: 5vw;
+  color: #FEFCF7;
 }
 body .main-content .content .main-title {
   font-size: 72px;
-  color: #FEFCF7;
   font-family: "Fraunces", sans-serif;
   text-shadow: 0 0 1px black;
 }
 body .main-content .content .info {
   font-size: 16px;
-  color: #FEFCF7;
   font-family: "Barlow", sans-serif;
 }
 body .create-plan-button {
@@ -61,11 +67,6 @@ body .create-plan-button:hover {
 body .coffee-type {
   color: #333D4B;
   font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   margin: 0 5vw;
 }
 body .coffee-type .our-collection {
@@ -94,14 +95,10 @@ body .coffee-type .coffee-info {
 body .why-us {
   position: relative;
   width: 100%;
+  justify-content: start;
   background-color: #2C343E;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 20vh;
-  text-align: center;
   border-radius: 10px;
-  background-color: #2C343E;
   height: 577px;
 }
 body .why-us .why {
@@ -110,7 +107,7 @@ body .why-us .why {
   margin-top: 5vh;
 }
 body .why-us .why h2 {
-  font-size: "Fraunces", sans-serif;
+  font-family: "Fraunces", sans-serif;
   font-size: 40px;
   line-height: 48px;
 }
@@ -126,10 +123,7 @@ body .why-us .arguments {
   transform: translateY(50%);
 }
 body .why-us .arguments .argument-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  flex-direction: row;
   gap: 5vw;
   margin: -10% 60px 0;
 }
@@ -139,10 +133,6 @@ body .why-us .arguments .argument {
   color: #FEFCF7;
   width: 350px;
   height: 382px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 body .why-us .arguments .argument h3 {
   margin-top: 5vh;
@@ -246,25 +236,19 @@ body .how .step-2 {
   body .main-content .content .info {
     font-size: 15px;
   }
-  body .coffee-type {
+  body .coffee-type, body .coffee-selection, body .coffee-type1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  body .coffee-type {
     margin-top: 5vh;
   }
   body .coffee-type .our-collection {
     font-size: 40px;
   }
   body .coffee-type .coffee-selection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 0;
-  }
-  body .coffee-type .coffee-selection .coffee-type1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   body .coffee-type .coffee-selection .coffee-img {
     width: 40vw;
@@ -284,7 +268,7 @@ body .how .step-2 {
     width: 90vw;
     height: 900px;
     position: relative;
-    margin-top: 5vh;
+    margin-top: 15vh;
   }
   body .why-us .why {
     margin: 2vh;
@@ -292,8 +276,8 @@ body .how .step-2 {
   }
   body .why-us .why h2 {
     font-family: "Fraunces", sans-serif;
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 24px;
     margin-top: 5vh;
   }
   body .why-us .why p {

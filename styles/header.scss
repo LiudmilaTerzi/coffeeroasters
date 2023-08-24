@@ -14,8 +14,8 @@ header {
   }
 
   .fa-bars {
-    font-size: $menu-icon-size;
-    color: $menu-icon-color;
+    font-size: $size24;
+    color: $dark-text;
     cursor: pointer;
     display: none;
   }
@@ -32,7 +32,7 @@ header {
 
         a {
           text-decoration: none;
-          color: $nav-list-item-color;
+          color: $gradient-color;
           text-transform: uppercase;
           font-weight: bold;
 
@@ -57,7 +57,7 @@ header {
     .fa-bars {
       position: absolute;
       left: 90%;
-      color: $menu-icon-color;
+      color: $dark-text;
       display: inline-block;
       height: 30px;
       width: 36px;
@@ -69,7 +69,7 @@ header {
       top: 70px;
       left: -100%;
       width: 100%;
-      background-color: $primary-color;
+      background-color: $dark-background;
       transition: left $transition-duration ease-in-out;
 
       ul {
