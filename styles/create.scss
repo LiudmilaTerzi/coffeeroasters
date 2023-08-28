@@ -8,149 +8,291 @@ body {
   background-color: $body-color;
 }
 
-@media (max-width: 480px) {
-    body {
-      margin: 30px 6.4% 10vh;
-    
-        .create-plan, .pick, .steps {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+//Base style
+
+body {
+  margin: 30px 50px 120px;
+
+  .create-plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h2 {
+    font-family: $fraunces-family;
+  }
+  p {
+    font-family: $barlow-family;
+  }
+  .create-plan,
+  .pick {
+    border-radius: 10px;
+  }
+  .create-plan {
+    background-image: url("../assets/create/background-d.jpg");
+    width: 100%;
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+
+    color: $text-light;
+    padding: 55px;
+    .create-text {
+      width: 445px;
+      height: 182px;
+
+      h2 {
+        margin: 0;
+        width: 485px;
+        font-size: $size72;
+        line-height: $size72;
+      }
+      p {
+        width: 445px;
+        font-size: $size16;
+        line-height: $size26;
+      }
+    }
+  }
+  .pick {
+    width: 100%;
+    height: 653px;
+    background-color: $background-color;
+    margin-top: 20vh;
+
+    .line-step-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      width: 1045px;
+      height: 454px;
+      gap: 68px;
+      position: relative;
+      top: -50%;
+      left: -50%;
+      transform: translate(65%, 90%);
+      .line-container {
+        display: flex;
+        align-items: center;
+        width: 75%;
+        position: relative;
+
+        .circle {
+          width: 31px;
+          height: 31px;
+          border-radius: 50%;
+          border: 2px solid $green-color;
+          background-color: transparent;
+          position: relative;
+          z-index: 1;
         }
 
-        h2, h3 {
-            font-family: $fraunces-family;
+        .line {
+          z-index: 2;
+          flex-grow: 1;
+          height: 2px;
+          background-color: $light-pink;
         }
-      
+      }
+
+      .steps {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: start;
+        width: 100%;
+
+        .step-1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          width: 27.27%;
+          height: 356px;
+          font-family: $fraunces-family;
+          color: $text-light;
+
+          .number {
+           
+            font-weight: bold;
+            font-size: $size72;
+            line-height: $size72;
+            color: $light-pink;
+          }
+          h3 {
+            width: 90%;
+            font-size: $size32;
+            line-height: $size36;
+          }
           p {
             font-family: $barlow-family;
-        }
-
-        .create-plan {
-            margin-top: 5vh;
-        background-image: url("../assets/create/background.jpg");
-          height: 400px;
-          background-size: cover;
-          background-position: 60%;
-          padding: 0;
-          border-radius: $size10;
-          color: $text-light;
-    
-          h2,
-          p {
-            width: 85.32%;
-          }
-    
-          h2 {
-            font-size: $size28;
-            line-height: $size28;
-          }
-    
-          p {
-            font-size: $size15;
-            line-height: $size25;
+            font-size: $size16;
+            line-height: $size26;
           }
         }
-
-        .pick {
-            margin-left: -6.4%;
-            width: 375px;
-            height: 1028px;
-            background-color: $background-color;
-            border-radius: $size10;
-            margin-top: 15vh;
-
-            .steps {
-                width: 327px;
-                height: 869px;
-                justify-content: space-evenly;
-
-                .step-1 {
-                    height: 252px;
-
-                    h3, p {
-                        color: $text-light;
-                    }
-
-                    .number {
-                        font-family: $fraunces-family;
-                        font-size: $size72;
-                        line-height: $size72;
-                        font-weight: bold;
-                        color: $light-pink;
-                    }
-
-                    h3 {
-                        font-size: $size28;
-                        line-height: $size32;
-                    }
-
-                    p {
-                        font-size: $size15;
-                        line-height: $size25;
-                    }
-                }
-            }
-        }
-
-        .list {
-            margin-top: 15vh;
-            width: 328px;
-
-            .accordion {
-              
-              .accordion-toggle {
-
-                font-family: $fraunces-family;
-                font-size: $size24;
-                font-weight: bold;
-                line-height: $size28;
-                color: $gradient-color;
-                width: 240px;
-                height: 56px;
-            }
-
-            .details {
-              display: flex;
-              flex-direction: column;
-              justify-content: space-around;
-              width: 100%;
-              height: 452px;
-              gap: 10px;
-              color: $dark-text;
-
-              div {
-                width: 100%;
-                height: 140px;
-                border-radius: 10px;
-                padding: 0 20px;
-                background-color: $light-grey;
-
-                h4 {
-                  font-family: $fraunces-family;
-                  font-size: $size24;
-                  line-height: $size32;
-                  margin: 20px 0;
-                }
-                p {
-                  font-family: $barlow-family;
-                  font-size: $size16;
-                  line-height: $size26;
-                  width: 85%;
-                  font-weight: bold;
-                }
-              }
-
-
-            }
-
-           
-            }
-         
-
-        }
-    
+      }
     }
-}   
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 30px 6.4% 10vh;
+
+    .create-plan,
+    .pick,
+    .steps {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    h2,
+    h3,
+    h4 {
+      font-family: $fraunces-family;
+    }
+
+    p {
+      font-family: $barlow-family;
+    }
+
+    .create-plan {
+      margin-top: 5vh;
+      background-image: url("../assets/create/background.jpg");
+      height: 400px;
+      background-size: cover;
+      background-position: 60%;
+      padding: 0;
+      border-radius: $size10;
+      color: $text-light;
+
+      .create-text {
+        width: 85.32%;
+
+        h2,
+        p {
+          width: 100%;
+        }
+        h2 {
+          font-size: $size28;
+          line-height: $size28;
+        }
+
+        p {
+          font-size: $size15;
+          line-height: $size25;
+        }
+      }
+    }
+
+    .pick {
+      margin-left: -6.4%;
+      width: 375px;
+      height: 1028px;
+      background-color: $background-color;
+      border-radius: $size10;
+      margin-top: 15vh;
+
+      .line-step-container {
+        width: 87.2%;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+
+        .line-container {
+          display: none;
+        }
+
+        .steps {
+          width: 327px;
+          height: 869px;
+          justify-content: space-evenly;
+          text-align: center;
+          gap: 50px;
+
+          .step-1 {
+            width: 100%;
+            height: 252px;
+
+            h3,
+            p {
+              color: $text-light;
+            }
+
+            .number {
+              font-family: $fraunces-family;
+              font-size: $size72;
+              line-height: $size72;
+              font-weight: bold;
+              color: $light-pink;
+            }
+
+            h3 {
+              font-size: $size28;
+              line-height: $size32;
+            }
+
+            p {
+              font-size: $size15;
+              line-height: $size25;
+            }
+          }
+        }
+      }
+    }
+
+    .list {
+      margin-top: 15vh;
+      width: 328px;
+
+      .accordion {
+        .accordion-toggle {
+          font-family: $fraunces-family;
+          font-size: $size24;
+          font-weight: bold;
+          line-height: $size28;
+          color: $gradient-color;
+          width: 240px;
+          height: 56px;
+        }
+
+        .details {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          width: 100%;
+          height: 452px;
+          gap: 10px;
+          color: $dark-text;
+
+          div {
+            width: 100%;
+            height: 140px;
+            border-radius: 10px;
+            padding: 0 20px;
+            background-color: $light-grey;
+
+            h4 {
+              font-size: $size24;
+              line-height: $size32;
+              margin: 20px 0;
+            }
+            p {
+              font-family: $barlow-family;
+              font-size: $size16;
+              line-height: $size26;
+              width: 85%;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

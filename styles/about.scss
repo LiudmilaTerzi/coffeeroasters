@@ -34,8 +34,7 @@ body {
     line-height: $size26;
   }
   .about-us {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("../assets/about/coffee/first-d.jpg");
+    background-image:  url("../assets/about/coffee/first-d.jpg");
     width: 100%;
     height: 450px;
     background-position: center;
@@ -106,9 +105,7 @@ body {
       height: 474px;
       border-radius: $size10;
     }
-    .img-mobile {
-      display: none;
-    }
+    
   }
 
   .headquarters {
@@ -141,7 +138,7 @@ body {
             width: 81.81%;
             color: $dark-text;
             font-weight: bold;
-            p {
+            h4 {
                 font-family: $fraunces-family;
                 font-size: $size32;
                 line-height: $size36;
@@ -192,7 +189,10 @@ body {
       margin-top: 15vh;
     }
     .img-desktop {
-      display: none;
+    display: none;
+    }
+    .img-mobile {
+        display: block;
     }
 
     h2 {
@@ -238,7 +238,7 @@ body {
       margin-left: 0;
       font-weight: bold;
       .img-mobile {
-        display: block;
+       
         width: 100%;
         height: 400px;
         border-radius: $size10;
@@ -268,12 +268,9 @@ body {
       background-color: $background-color;
       border-radius: $size10;
       margin-top: 35vh;
-      .img-desktop {
-        display: none;
-      }
 
       .img-mobile {
-        display: block;
+        
         width: 85.32%;
         position: relative;
         top: -3.4%;
@@ -324,7 +321,7 @@ body {
             gap: 15px;
             }
 
-            .country p {
+            .country h4 {
             font-family: $fraunces-family;
             font-size: $size28;
             line-height: $size32;
