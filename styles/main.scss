@@ -15,6 +15,14 @@ html, body {
 body {
   margin: 30px 50px 120px;
 
+
+    .coffee-type, .why-us, .argument, .argument-1 {
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
   .main-content {
     background-image: url('../assets/home/Bitmap.png');
     border-radius: 10px;
@@ -31,18 +39,19 @@ body {
       width: 37.75%;
       height: 60.2%;
       margin-left: 5vw;
+      color: $text-light;
 
       .main-title {
       
-        font-size: 72px;
-        color: #FEFCF7;
+        font-size: $size72;
+      
         font-family: $fraunces-family;
         text-shadow: 0 0 1px black;
       }
       
       .info {
-        font-size: 16px;
-        color: #FEFCF7;
+        font-size: $size16;
+        
         font-family: $barlow-family;
       }
     
@@ -60,7 +69,7 @@ body {
       font-weight: bold;
       text-decoration: none;
       background-color: $green-color; 
-      color: #FEFCF7; 
+      color: $text-light; 
       border-radius: 5px;
       text-align: center;
       line-height: 56px;
@@ -74,11 +83,7 @@ body {
   .coffee-type{
     color: $menu-icon-color;
     font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    
     margin: 0 5vw;
     .our-collection {
       background: linear-gradient(to bottom, $gradient-color, transparent);
@@ -98,42 +103,38 @@ body {
     }
     .coffee-name {
       font-family: $fraunces-family;
-      font-size: 24px;
+      font-size: $size24;
     }
     .coffee-info {
       font-family: $barlow-family;
-      font-size: 16px;
+      font-size: $size16
     }
   }
 
   .why-us{
     position: relative;
     width: 100%;
-    background-color: #2C343E;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: start;
+    background-color: $background-color;
     margin-top: 20vh;
-    text-align: center;
     border-radius: 10px;
-    background-color: #2C343E;
     height: 577px;
     
     .why {
-      color: #FEFCF7;
+      color: $text-light;
       width: 40%;
       margin-top: 5vh;
 
       h2{
-        font-size: $fraunces-family;
-        font-size: 40px;
-        line-height: 48px;
+        font-family: $fraunces-family;
+        font-size: $size40;
+        line-height: $size48;
       }
       
       p{
         font-family: $barlow-family;
-        font-size: 16px;
-        line-height: 26px;
+        font-size: $size16;
+        line-height: $size26;
       }
       
     }
@@ -144,10 +145,7 @@ body {
       transform: translateY(50%);
 
       .argument-1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        flex-direction: row;
         gap: 5vw;
         margin: -10% 60px 0;
       }
@@ -155,23 +153,20 @@ body {
       .argument {
         background-color: $green-color;
         border-radius: 5px;
-        color: #FEFCF7;
+        color: $text-light;
         width: 350px;
         height: 382px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    
   
         h3 {
           margin-top: 5vh;
           font-family: $fraunces-family;
-          font-size: 24px;
+          font-size: $size24;
         
         }
         p {
           font-family: $barlow-family;
-          font-size: 15px;
+          font-size: $size15;
           width: 80%;
         }
       }
@@ -197,15 +192,15 @@ body {
         height: 31px;
         border-radius: 50%;
         border: 2px solid $green-color;
-        background-color: #FEFCF7;
+        background-color: $text-light;
       }
     
       .line {
         flex-grow: 1;
         height: 4px;
-        background-color: #FDD6BA;
-        border: 1px solid #FDD6BA;
-        box-shadow: 0 2px 4px #D8D8D8; 
+        background-color: $light-pink;
+        border: 1px solid $light-pink;
+        box-shadow: 0 2px 4px $shadow-color; 
       }
     }
 
@@ -228,26 +223,26 @@ body {
       font-weight: bold;
     }
     h3 {
-      font-size: 24px;
-      line-height: 32px;
-      color: #83888F;
+      font-size: $size24;
+      line-height: $size32;
+      color: $gradient-color;
     }
     .number {
-      font-size: 72px;
-      color: #FDD6BA;
-      line-height: 72px;
+      font-size: $size72;
+      color: $light-pink;
+      line-height: $size72;
     }
     
     .step-1 {
-      font-size: 32px;
-      color: #333D4B;
-      line-height: 36px;
+      font-size: $size32;
+      color: $dark-text;
+      line-height: $size36;
       width: 65%;
 
     }
     .step-2 {
-      font-size: 16px;
-      line-height: 16px;
+      font-size: $size16;
+      line-height: $size16;
       width: 80%;
     }
     
@@ -279,36 +274,32 @@ body {
         height: 60.2%;
         margin: auto;
         .main-title {
-          font-size: 36px;
+          font-size: $size36;
           margin-top: 20vh;
         }
         
         .info {
-          font-size: 15px;
+          font-size: $size15;
         }
         
       }
    
     }
-    .coffee-type{
+    .coffee-type, .coffee-selection, .coffee-type1 {
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+    .coffee-type{
+      
       margin-top: 5vh;
   
       .our-collection {
-        font-size: 40px;
+        font-size: $size40;
       }
       .coffee-selection {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         margin: 0;
-        .coffee-type1{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
+       
         .coffee-img {
           width: 40vw;
           height: fit-content;
@@ -316,7 +307,7 @@ body {
     
         }
         .coffee-name {
-          font-size: 24px;
+          font-size: $size24;
           
         }
         .coffee-info {
@@ -333,7 +324,7 @@ body {
       width: 90vw;
       height: 900px;
       position: relative;
-      margin-top: 5vh;
+      margin-top: 15vh;
      
       .why {
         margin: 2vh;
@@ -341,15 +332,15 @@ body {
 
         h2{
           font-family: $fraunces-family;
-          font-size: 28px;
-          line-height: 28px;
+          font-size: $size24;
+          line-height: $size24;
           margin-top: 5vh;
         }
         p{
           width: 70vw;
           font-family: $barlow-family;
-          font-size: 15px;
-          line-height: 25px;
+          font-size: $size15;
+          line-height: $size25;
         }
       
        
@@ -411,8 +402,8 @@ body {
   
       h3, .number, .step-1{
         font-family: $fraunces-family;
-        font-size: 24px;
-        color: #83888F;
+        font-size: $size24;
+        color: $gradient-color;
       }
       .do-steps {
         display: flex;
@@ -426,20 +417,20 @@ body {
           width: 100%;
 
           .number, .step-1 {
-            font-size: 72px;
-            color: #FDD6BA;
+            font-size: $size72;
+            color: $light-pink;
             font-weight: bold;
           }
           .step-1 {
-            color: #333D4B;
-            font-size: 28px;
-            line-height: 28px;
+            color: $dark-text;
+            font-size: $size28;
+            line-height: $size28;
             width: 100%;
           }
           .step-2 {
             font-family: $barlow-family;
-            font-size: 15px;
-            line-height: 25px;
+            font-size: $size15;
+            line-height: $size25;
             font-weight: bold;
             width: 95%;
           }
