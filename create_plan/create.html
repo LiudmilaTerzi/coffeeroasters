@@ -4,9 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>Create a plan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="../styles/shared/header.css">
+    <link rel="stylesheet" href="../styles/shared/footer.css">
+    <link rel="stylesheet" href="../styles/create.css">
 </head>
 
 <body>
@@ -56,92 +56,91 @@
         </section>
 
         <section class="list">
-            <details class="details">
-                <summary>How do you drink your coffee?</summary>
-                <ul>
-                    <li>
-                        <h3>Capsule</h3>
+            <div class="accordion">
+                <h3 class="accordion-toggle">How do you drink your coffee?</h3>
+                <div class="details">
+                    <div >
+                        <h4>Capsule</h4>
                         <p>Compatible with Nespresso systems and similar brewers</p>
-                    </li>
-                    <li>
-                        <h3>Filter</h3>
+                    </div >
+                    <div >
+                        <h4>Filter</h4>
                         <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
-                    </li>
-                    <li>
-                        <h3>Espresso</h3>
+                    </div >
+                    <div >
+                        <h4>Espresso</h4>
                         <p>Dense and finely ground beans for an intense, flavorful experience</p>
-                    </li>
-                </ul>
-            </details>
-            <details class="details">
-                <summary>What type of coffee?</summary>
-                <ul>
-                    <li>
-                        <h3>Single Origin</h3>
+                    </div >
+                </div >
+            </div >   
+            <div class="accordion">
+                <h3 class="accordion-toggle">What type of coffee?</h3>
+                <div  class="details">
+                    <div>
+                        <h4>Single Origin</h4>
                         <p>Distinct, high quality coffee from a specific family-owned farm</p>
-                    </li>
-                    <li>
-                        <h3>Decaf</h3>
+                    </div>
+                    <div>
+                        <h4>Decaf</h4>
                         <p>Just like regular coffee, except the caffeine has been removed</p>
-                    </li>
-                    <li>
-                        <h3>Blended</h3>
+                    </div>
+                    <div>
+                        <h4>Blended</h4>
                         <p>Combination of two or three dark roasted beans of organic coffees</p>
-                    </li>
-                </ul>
-            </details>
-            <details class="details">
-                <summary>How much would you like?</summary>
-                <ul>
-                    <li>
-                        <h3>250g</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">    
+                <h3 class="accordion-toggle">How much would you like?</h3>
+                <div class="details">
+                    <div>
+                        <h4>250g</h4>
                         <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
-                    </li>
-                    <li>
-                        <h3>500g</h3>
+                    </div>
+                    <div>
+                        <h4>500g</h34>
                         <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
-                    </li>
-                    <li>
-                        <h3>1000g</h3>
+                    </div>
+                    <div>
+                        <h4>1000g</h4>
                         <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
-                    </li>
-                </ul>
-            </details>
-            <details class="details">
-                <summary>Want us to grind them?</summary>
-                <ul>
-                    <li>
-                        <h3>Wholebean</h3>
+                    </div>
+                </div>
+            </div>   
+            <div class="accordion"> 
+                <h3 class="accordion-toggle">Want us to grind them?</h3>
+                <div class="details">
+                    <div>
+                        <h4>Wholebean</h4>
                         <p>Best choice if you cherish the full sensory experience</p>
-                    </li>
-                    <li>
-                        <h3>Filter</h3>
+                    </div>
+                    <div>
+                        <h4>Filter</h4>
                         <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
-                    </li>
-                    <li>
-                        <h3>Cafeti&#233;re</h3>
+                    </div>
+                    <div>
+                        <h4>Cafeti&#233;re</h4>
                         <p>Course ground beans specially suited for french press coffee</p>
-                    </li>
-                </ul>
-            </details>
-            <details class="details">
-                <summary>How often should we deliver?</summary>
-                <ul>
-                    <li>
-                        <h3>Every week</h3>
+                    </div>
+                </div>
+            </div>    
+            <div class="accordion"> 
+                <h3 class="accordion-toggle">How often should we deliver?</h3>
+                <div class="details">
+                    <div>
+                        <h4>Every week</h4>
                         <p>$7.20 per shipment. Includes free first-class shipping.</p>
-                    </li>
-                    <li>
-                        <h3>Every 2 weeks</h3>
+                    </div>
+                    <div>
+                        <h4>Every 2 weeks</h4>
                         <p>$9.60 per shipment. Includes free priority shipping.</p>
-                    </li>
-                    <li>
-                        <h3>Every month</h3>
+                    </div>
+                    <div>
+                        <h4>Every month</h4>
                         <p>$12.00 per shipment. Includes free priority shipping.</p>
-                    </li>
-                </ul>
-            </details>
-
+                    </div>
+                </div>
+            </div>     
         </section>
 
     </main>
@@ -162,4 +161,6 @@
                     alt="Instagram"></a>
         </div>
     </footer>
+
+    <script src="../js/subscription.js" ></script>
 </body>
