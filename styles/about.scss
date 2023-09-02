@@ -1,169 +1,151 @@
-@import "../styles/variables.scss";
+@import "../styles/variables";
+@import "../styles/generals";
 
-* {
-  box-sizing: border-box;
-}
-html,
-body {
-  background-color: $body-color;
-}
+
 
 //Base style
 
-body {
-  margin: 30px 50px 120px;
+@media (min-width: 1000px) {
+  body {
+    margin: 30px 50px 120px;
 
-  .about-us,
-  .commitment-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .img-mobile {
-    display: none;
-  }
-  h2 {
-    font-family: $fraunces-family;
-    font-size: $size40;
-    line-height: $size48;
-  }
-  p {
-    font-family: $barlow-family;
-    font-size: $size16;
-    line-height: $size26;
-  }
-  .about-us {
-    background-image:  url("../assets/about/coffee/first-d.jpg");
-    width: 100%;
-    height: 450px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 30px;
-    border-radius: $size10;
-    color: $text-light;
-    padding: 100px;
-
-    h2 {
-      width: 188px;
-    }
-    p {
-      width: 445px;
-    }
-  }
-
-  .commitment {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1110px;
-
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 30%);
-
-    .img-desktop {
-      width: 445px;
-      height: 520px;
-    }
+    .about-us,
     .commitment-text {
-      width: 540px;
-      height: 340px;
-      color: $dark-text;
-
-      p {
-        font-weight: bold;
-      }
-    }
-  }
-
-
-  .quality {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 474px;
-    background-color: $background-color;
-    border-radius: $size10;
-    margin-top: 50vh;
-
-    .quality-text {
-      width: 540px;
-      height: 210px;
-      color: $text-light;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
-    .img-desktop {
-      margin-top: -15.66%;
-      width: 445px;
-      height: 474px;
-      border-radius: $size10;
+    .img-mobile {
+      display: none;
     }
-    
-  }
-
-  .headquarters {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 1045px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 30%);
-    gap: 72px;
-    
     h2 {
+     
+      font-size: $size40;
+      line-height: $size48;
+    }
+    p {
+  
+      font-size: $size16;
+      line-height: $size26;
+    }
+    .about-us {
+      background-image: url("../assets/about/coffee/first-d.jpg");
+      width: 100%;
+      height: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 30px;
+      border-radius: 10px;
+      color: $text-light;
+      padding: 100px;
+
+      h2, p {
+        width: 34.76%;
+      }
+    }
+
+    .commitment {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 86.71%;
+      margin-left: 6.65%;
+      margin-top: 15vh;
+      .img-desktop {
+        width: 40.1%;
+        height: auto;
+      }
+      .commitment-text {
+        width: 48.64%;
+        height: auto;
+        color: $dark-text;
+        font-weight: bold;
+
+        
+      }
+    }
+
+    .quality {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      height: fit-content;
+      background-color: $background-color;
+      border-radius: 10px;
+      margin-top: 25vh;
+
+      .quality-text {
+        width: 42.18%;
+        color: $text-light;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .img-desktop {
+        
+        width: 34.76%;
+        height: auto;
+        position: relative;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -15.66%);
+        border-radius: 10px;
+      }
+    }
+
+    .headquarters {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width:81.64%;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 30%);
+      gap: 72px;
+
+      h2 {
         font-size: $size24;
         line-height: $size32;
         color: $gradient-color;
+      }
+
+      .location {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 6.06%;
+
+        .country {
+          width: 81.81%;
+          color: $dark-text;
+          font-weight: bold;
+          h4 {
+            
+            font-size: $size32;
+            line-height: $size36;
+          }
+
+          img {
+            width: 41px;
+            height: 49px;
+          }
+          .adress {
+            font-family: $barlow-family;
+            font-size: $size16;
+            line-height: $size26;
+          }
         }
-
-    .location {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      gap: 6.06%;
-     
-      
-
-      .country {
-            width: 81.81%;
-            color: $dark-text;
-            font-weight: bold;
-            h4 {
-                font-family: $fraunces-family;
-                font-size: $size32;
-                line-height: $size36;
-                
-                
-            }
-
-            img {
-                width: 41px;
-                height: 49px;
-            }
-            .adress {
-                font-family: $barlow-family;
-                font-size: $size16;
-                line-height: $size26;
-               
-
-            }
-        }
-
-      
+      }
     }
-  }
-  footer {
-    margin-top: 30vh;
+    footer {
+      margin-top: 30vh;
+    }
   }
 }
 
@@ -189,22 +171,15 @@ body {
       margin-top: 15vh;
     }
     .img-desktop {
-    display: none;
+      display: none;
     }
     .img-mobile {
-        display: block;
+      display: block;
     }
 
-    h2 {
-      font-family: $fraunces-family;
-    }
-
-    p {
-      font-family: $barlow-family;
-    }
     .about-us {
-        margin-top: 5vh;
-        background-image: url("../assets/about/coffee/first.jpg");
+      margin-top: 5vh;
+      background-image: url("../assets/about/coffee/first.jpg");
       height: 400px;
       background-size: cover;
       padding: 0;
@@ -225,39 +200,30 @@ body {
         line-height: $size25;
       }
     }
-    .commitment,
-    .quality,
-    .headquarters {
-      top: 0;
-      left: 0;
-      transform: translate(0px, 0px);
-    }
 
     .commitment {
       width: 100%;
-      margin-left: 0;
+
       font-weight: bold;
       .img-mobile {
-       
         width: 100%;
         height: 400px;
-        border-radius: $size10;
+        border-radius: 10px;
       }
 
       .commitment-text {
         width: 100%;
         height: auto;
+        color: $dark-text;
 
         h2 {
           font-size: $size32;
           line-height: $size48;
-          color: $dark-text;
         }
 
         p {
           font-size: $size15;
           line-height: $size25;
-          color: $dark-text;
         }
       }
     }
@@ -266,23 +232,22 @@ body {
       width: 100%;
       height: 509px;
       background-color: $background-color;
-      border-radius: $size10;
-      margin-top: 35vh;
+      border-radius: 10px;
+      margin-top: 25vh;
 
       .img-mobile {
-        
         width: 85.32%;
         position: relative;
-        top: -3.4%;
+        top: -50%;
         left: -50%;
-        transform: translate(58%, -50%);
-        border-radius: $size10;
+        transform: translate(59%, 95%);
+        border-radius: 10px;
       }
       .quality-text {
         width: 100%;
         height: 306px;
         background-color: $background-color;
-        border-radius: $size10;
+        border-radius: 10px;
         color: $text-light;
 
         h2,
@@ -297,13 +262,12 @@ body {
         p {
           font-size: $size15;
           line-height: $size25;
-          margin-bottom: 35px;
         }
       }
     }
 
     .headquarters {
-        width: 100%;
+      width: 100%;
       gap: 70px;
       img {
         width: 41px;
@@ -311,31 +275,31 @@ body {
       }
 
       h2 {
-            color: $gradient-color;
-            font-size: $size24;
-            line-height: $size32;
+        color: $gradient-color;
+        font-size: $size24;
+        line-height: $size32;
       }
       .location {
-            gap: 100px;
-            .country {
-            gap: 15px;
-            }
-
-            .country h4 {
-            font-family: $fraunces-family;
-            font-size: $size28;
-            line-height: $size32;
-            color: $dark-text;
-            font-weight: bold;
-            }
-            .adress {
-                font-family: $barlow-family;
-                font-size: $size16;
-                line-height: $size26;
-                color: $dark-text;
-                font-weight: bold;
-            }
+        gap: 100px;
+        color: $dark-text;
+        .country {
+          gap: 15px;
         }
+
+        .country h4 {
+          font-size: $size28;
+          line-height: $size32;
+
+          font-weight: bold;
+        }
+        .adress {
+          font-family: $barlow-family;
+          font-size: $size16;
+          line-height: $size26;
+
+          font-weight: bold;
+        }
+      }
     }
   }
 }

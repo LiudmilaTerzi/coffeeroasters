@@ -1,0 +1,9 @@
+@import "../variables";
+
+@mixin number {
+    font-family: $fraunces-family;
+    font-weight: bold;
+    font-size: $size72;
+    line-height: $size72;
+    color: $light-pink;
+}

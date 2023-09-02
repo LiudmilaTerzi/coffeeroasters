@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -9,138 +11,149 @@ body {
   background-color: #FEFCF7;
 }
 
-body {
-  margin: 30px 50px 120px;
-}
-body .about-us,
-body .commitment-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-body .img-mobile {
-  display: none;
-}
-body h2 {
+h1, h2, h3, h4 {
   font-family: "Fraunces", sans-serif;
-  font-size: 40px;
-  line-height: 48px;
-}
-body p {
-  font-family: "Barlow", sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-}
-body .about-us {
-  background-image: url("../assets/about/coffee/first-d.jpg");
-  width: 100%;
-  height: 450px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 30px;
-  border-radius: 10px;
-  color: #FEFCF7;
-  padding: 100px;
-}
-body .about-us h2 {
-  width: 188px;
-}
-body .about-us p {
-  width: 445px;
-}
-body .commitment {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1110px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 30%);
-}
-body .commitment .img-desktop {
-  width: 445px;
-  height: 520px;
-}
-body .commitment .commitment-text {
-  width: 540px;
-  height: 340px;
-  color: #333D4B;
-}
-body .commitment .commitment-text p {
-  font-weight: bold;
-}
-body .quality {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  height: 474px;
-  background-color: #2C343E;
-  border-radius: 10px;
-  margin-top: 50vh;
-}
-body .quality .quality-text {
-  width: 540px;
-  height: 210px;
-  color: #FEFCF7;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-body .quality .img-desktop {
-  margin-top: -15.66%;
-  width: 445px;
-  height: 474px;
-  border-radius: 10px;
-}
-body .headquarters {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 1045px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 30%);
-  gap: 72px;
-}
-body .headquarters h2 {
-  font-size: 24px;
-  line-height: 32px;
-  color: #83888F;
-}
-body .headquarters .location {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  gap: 6.06%;
-}
-body .headquarters .location .country {
-  width: 81.81%;
-  color: #333D4B;
-  font-weight: bold;
-}
-body .headquarters .location .country h4 {
-  font-family: "Fraunces", sans-serif;
-  font-size: 32px;
-  line-height: 36px;
-}
-body .headquarters .location .country img {
-  width: 41px;
-  height: 49px;
-}
-body .headquarters .location .country .adress {
-  font-family: "Barlow", sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-}
-body footer {
-  margin-top: 30vh;
 }
 
+p {
+  font-family: "Barlow", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+@media (min-width: 1000px) {
+  body {
+    margin: 30px 50px 120px;
+  }
+  body .about-us,
+  body .commitment-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body .img-mobile {
+    display: none;
+  }
+  body h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  body p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  body .about-us {
+    background-image: url("../assets/about/coffee/first-d.jpg");
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: #FEFCF7;
+    padding: 100px;
+  }
+  body .about-us h2, body .about-us p {
+    width: 34.76%;
+  }
+  body .commitment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 86.71%;
+    margin-left: 6.65%;
+    margin-top: 15vh;
+  }
+  body .commitment .img-desktop {
+    width: 40.1%;
+    height: auto;
+  }
+  body .commitment .commitment-text {
+    width: 48.64%;
+    height: auto;
+    color: #333D4B;
+    font-weight: bold;
+  }
+  body .quality {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #2C343E;
+    border-radius: 10px;
+    margin-top: 25vh;
+  }
+  body .quality .quality-text {
+    width: 42.18%;
+    color: #FEFCF7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body .quality .img-desktop {
+    width: 34.76%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -15.66%);
+    border-radius: 10px;
+  }
+  body .headquarters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 81.64%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    gap: 72px;
+  }
+  body .headquarters h2 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+  }
+  body .headquarters .location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 6.06%;
+  }
+  body .headquarters .location .country {
+    width: 81.81%;
+    color: #333D4B;
+    font-weight: bold;
+  }
+  body .headquarters .location .country h4 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  body .headquarters .location .country img {
+    width: 41px;
+    height: 49px;
+  }
+  body .headquarters .location .country .adress {
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  body footer {
+    margin-top: 30vh;
+  }
+}
 @media (max-width: 480px) {
   body {
     margin: 30px 6.4% 10vh;
@@ -169,12 +182,6 @@ body footer {
   body .img-mobile {
     display: block;
   }
-  body h2 {
-    font-family: "Fraunces", sans-serif;
-  }
-  body p {
-    font-family: "Barlow", sans-serif;
-  }
   body .about-us {
     margin-top: 5vh;
     background-image: url("../assets/about/coffee/first.jpg");
@@ -195,16 +202,8 @@ body footer {
     font-size: 15px;
     line-height: 25px;
   }
-  body .commitment,
-  body .quality,
-  body .headquarters {
-    top: 0;
-    left: 0;
-    transform: translate(0px, 0px);
-  }
   body .commitment {
     width: 100%;
-    margin-left: 0;
     font-weight: bold;
   }
   body .commitment .img-mobile {
@@ -215,30 +214,29 @@ body footer {
   body .commitment .commitment-text {
     width: 100%;
     height: auto;
+    color: #333D4B;
   }
   body .commitment .commitment-text h2 {
     font-size: 32px;
     line-height: 48px;
-    color: #333D4B;
   }
   body .commitment .commitment-text p {
     font-size: 15px;
     line-height: 25px;
-    color: #333D4B;
   }
   body .quality {
     width: 100%;
     height: 509px;
     background-color: #2C343E;
     border-radius: 10px;
-    margin-top: 35vh;
+    margin-top: 25vh;
   }
   body .quality .img-mobile {
     width: 85.32%;
     position: relative;
-    top: -3.4%;
+    top: -50%;
     left: -50%;
-    transform: translate(58%, -50%);
+    transform: translate(59%, 95%);
     border-radius: 10px;
   }
   body .quality .quality-text {
@@ -259,7 +257,6 @@ body footer {
   body .quality .quality-text p {
     font-size: 15px;
     line-height: 25px;
-    margin-bottom: 35px;
   }
   body .headquarters {
     width: 100%;
@@ -276,22 +273,20 @@ body footer {
   }
   body .headquarters .location {
     gap: 100px;
+    color: #333D4B;
   }
   body .headquarters .location .country {
     gap: 15px;
   }
   body .headquarters .location .country h4 {
-    font-family: "Fraunces", sans-serif;
     font-size: 28px;
     line-height: 32px;
-    color: #333D4B;
     font-weight: bold;
   }
   body .headquarters .location .adress {
     font-family: "Barlow", sans-serif;
     font-size: 16px;
     line-height: 26px;
-    color: #333D4B;
     font-weight: bold;
   }
 }/*# sourceMappingURL=about.css.map */
