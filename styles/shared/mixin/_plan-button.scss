@@ -1,0 +1,22 @@
+@import "../variables";
+
+@mixin plan-button {
+    display: inline-block;
+    margin-top: 20px;
+    width: 217px;
+    height: 56px;
+    font-family: $fraunces-family;
+    font-size: 18px;
+    font-weight: $bold;
+    text-decoration: none;
+    background-color: $green-color;
+    color: $light-cream;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 56px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+    }
+  }

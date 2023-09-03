@@ -1,254 +1,309 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
 * {
   box-sizing: border-box;
 }
 
-html, body {
-  background-color: #FEFCF7;
-}
-
+html,
 body {
-  margin: 30px 50px 120px;
-}
-body .coffee-type, body .why-us, body .argument, body .argument-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-body .main-content {
-  background-image: url("../assets/home/Bitmap.png");
-  border-radius: 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 600px;
-  margin-top: 5vh;
-}
-body .main-content .content {
-  display: flex;
-  flex-direction: column;
-  width: 37.75%;
-  height: 60.2%;
-  margin-left: 5vw;
-  color: #FEFCF7;
-}
-body .main-content .content .main-title {
-  font-size: 72px;
-  font-family: "Fraunces", sans-serif;
-  text-shadow: 0 0 1px black;
-}
-body .main-content .content .info {
-  font-size: 16px;
-  font-family: "Barlow", sans-serif;
-}
-body .create-plan-button {
-  display: inline-block;
-  margin-top: 20px;
-  width: 217px;
-  height: 56px;
-  font-family: "Fraunces", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  background-color: #0E8784;
-  color: #FEFCF7;
-  border-radius: 5px;
-  text-align: center;
-  line-height: 56px;
-  transition: background-color 0.3s ease;
-}
-body .create-plan-button:hover {
-  background-color: #095957;
-}
-body .coffee-type {
-  color: #333D4B;
-  font-weight: bold;
-  margin: 0 5vw;
-}
-body .coffee-type .our-collection {
-  background: linear-gradient(to bottom, #83888F, transparent);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: bold;
-  font-size: 150px;
-}
-body .coffee-type .coffee-selection {
-  display: flex;
-  gap: 1vw;
-  margin-top: -200px;
-}
-body .coffee-type .coffee-selection .coffee-type1 {
-  width: 255px;
-}
-body .coffee-type .coffee-name {
-  font-family: "Fraunces", sans-serif;
-  font-size: 24px;
-}
-body .coffee-type .coffee-info {
-  font-family: "Barlow", sans-serif;
-  font-size: 16px;
-}
-body .why-us {
-  position: relative;
-  width: 100%;
-  justify-content: start;
-  background-color: #2C343E;
-  margin-top: 20vh;
-  border-radius: 10px;
-  height: 577px;
-}
-body .why-us .why {
-  color: #FEFCF7;
-  width: 40%;
-  margin-top: 5vh;
-}
-body .why-us .why h2 {
-  font-family: "Fraunces", sans-serif;
-  font-size: 40px;
-  line-height: 48px;
-}
-body .why-us .why p {
-  font-family: "Barlow", sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-}
-body .why-us .arguments {
-  width: 100%;
-  position: absolute;
-  top: 65%;
-  transform: translateY(50%);
-}
-body .why-us .arguments .argument-1 {
-  flex-direction: row;
-  gap: 5vw;
-  margin: -10% 60px 0;
-}
-body .why-us .arguments .argument {
-  background-color: #0E8784;
-  border-radius: 5px;
-  color: #FEFCF7;
-  width: 350px;
-  height: 382px;
-}
-body .why-us .arguments .argument h3 {
-  margin-top: 5vh;
-  font-family: "Fraunces", sans-serif;
-  font-size: 24px;
-}
-body .why-us .arguments .argument p {
-  font-family: "Barlow", sans-serif;
-  font-size: 15px;
-  width: 80%;
-}
-body .how {
-  margin-top: 50vh;
-  width: 82%;
-  display: flex;
-  flex-direction: column;
-  margin-left: 9%;
-  gap: 25px;
-}
-body .how .line-container {
-  display: flex;
-  align-items: center;
-  width: 69.33%;
-}
-body .how .line-container .circle {
-  width: 31px;
-  height: 31px;
-  border-radius: 50%;
-  border: 2px solid #0E8784;
   background-color: #FEFCF7;
 }
-body .how .line-container .line {
-  flex-grow: 1;
-  height: 4px;
-  background-color: #FDD6BA;
-  border: 1px solid #FDD6BA;
-  box-shadow: 0 2px 4px #D8D8D8;
-}
-body .how .do-steps {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: start;
-}
-body .how .do-steps .step {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 33.333%;
-}
-body .how h3, body .how .number, body .how .step-1 {
+
+h1, h2, h3, h4 {
   font-family: "Fraunces", sans-serif;
-  font-weight: bold;
-}
-body .how h3 {
-  font-size: 24px;
-  line-height: 32px;
-  color: #83888F;
-}
-body .how .number {
-  font-size: 72px;
-  color: #FDD6BA;
-  line-height: 72px;
-}
-body .how .step-1 {
-  font-size: 32px;
-  color: #333D4B;
-  line-height: 36px;
-  width: 65%;
-}
-body .how .step-2 {
-  font-size: 16px;
-  line-height: 16px;
-  width: 80%;
 }
 
+p {
+  font-family: "Barlow", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+@media (min-width: 1000px) {
+  body {
+    margin: 50px 50px 120px;
+  }
+  body .coffee-type,
+  body .why-us,
+  body .argument,
+  body .argument-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  body .main-content {
+    background-image: url("../assets/home/Bitmap.png");
+    border-radius: $border-radius;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    margin-top: 5vh;
+  }
+  body .main-content .content {
+    display: flex;
+    flex-direction: column;
+    width: 37.75%;
+    height: 60.2%;
+    margin-left: 5vw;
+    color: #FEFCF7;
+  }
+  body .main-content .content .main-title {
+    font-size: 72px;
+    line-height: 72px;
+    text-shadow: 0 0 1px black;
+  }
+  body .main-content .content .info {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  body .create-plan-button {
+    display: inline-block;
+    margin-top: 20px;
+    width: 217px;
+    height: 56px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 18px;
+    font-weight: $bold;
+    text-decoration: none;
+    background-color: #0E8784;
+    color: #FEFCF7;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 56px;
+    transition: background-color 0.3s ease;
+  }
+  body .create-plan-button:hover {
+    background-color: #095957;
+  }
+  body .coffee-type .our-collection {
+    background: linear-gradient(to bottom, #83888F, transparent);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: $bold;
+    font-size: 150px;
+  }
+  body .coffee-type .coffee-selection {
+    display: flex;
+    gap: 1vw;
+    margin-top: -200px;
+    font-weight: $bold;
+  }
+  body .coffee-type .coffee-selection .coffee-type1 {
+    width: 255px;
+  }
+  body .coffee-type .coffee-name {
+    font-size: 24px;
+  }
+  body .coffee-type .coffee-info {
+    font-size: 16px;
+  }
+  body .why-us {
+    position: relative;
+    width: 100%;
+    justify-content: start;
+    background-color: #2C343E;
+    margin-top: 20vh;
+    border-radius: $border-radius;
+    height: 577px;
+  }
+  body .why-us .why {
+    color: #FEFCF7;
+    width: 40%;
+    margin-top: 5vh;
+  }
+  body .why-us .why h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  body .why-us .why p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  body .why-us .arguments {
+    width: 100%;
+    position: absolute;
+    top: 65%;
+    transform: translateY(50%);
+  }
+  body .why-us .arguments .argument-1 {
+    flex-direction: row;
+    gap: 5vw;
+    margin: -10% 60px 0;
+  }
+  body .why-us .arguments .argument {
+    background-color: #0E8784;
+    border-radius: 5px;
+    color: #FEFCF7;
+    width: 350px;
+    height: 382px;
+  }
+  body .why-us .arguments .argument h3 {
+    margin-top: 5vh;
+    font-size: 24px;
+  }
+  body .why-us .arguments .argument p {
+    font-size: 15px;
+    width: 80%;
+  }
+  body section.how {
+    margin-top: 50vh;
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 9%;
+    gap: 25px;
+  }
+  body section.how .line-container {
+    display: flex;
+    align-items: center;
+    width: 69.33%;
+  }
+  body section.how .line-container .circle {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 2px solid #0E8784;
+    background-color: #FEFCF7;
+  }
+  body section.how .line-container .line {
+    flex-grow: 1;
+    height: 4px;
+    background-color: #FDD6BA;
+    border: 1px solid #FDD6BA;
+    box-shadow: 0 2px 4px #D8D8D8;
+  }
+  body section.how .do-steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+  }
+  body section.how .do-steps .step {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 33.333%;
+  }
+  body section.how .do-steps .step h2.number {
+    font-family: "Fraunces", sans-serif;
+    font-weight: $bold;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FDD6BA;
+  }
+  body section.how h3,
+  body section.how .step-1,
+  body section.how .step-2 {
+    font-weight: $bold;
+  }
+  body section.how h3 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+  }
+  body section.how .step-1 {
+    font-size: 32px;
+    color: #333D4B;
+    line-height: 36px;
+    width: 65%;
+  }
+  body section.how .step-2 {
+    font-size: 16px;
+    line-height: 26px;
+    width: 80%;
+  }
+}
 @media (max-width: 480px) {
   body {
     margin: 30px 6.4% 10vh;
   }
   body .main-content {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/home/Bitmap.png");
+    background-image: url("../assets/home/Bitmap.png");
     margin-top: 30px;
     width: 100%;
     height: 500px;
     background-size: cover;
     background-position: 68% 20%;
+    border-radius: $border-radius;
   }
   body .main-content .content {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 85.3%;
-    height: 60.2%;
-    margin: auto;
-  }
-  body .main-content .content .main-title {
-    font-size: 36px;
-    margin-top: 20vh;
-  }
-  body .main-content .content .info {
-    font-size: 15px;
-  }
-  body .coffee-type, body .coffee-selection, body .coffee-type1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    color: #FEFCF7;
+  }
+  body .main-content .content .main-title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 20%;
+    font-family: "Fraunces", sans-serif;
+    text-shadow: 0 0 1px black;
+  }
+  body .main-content .content .info {
+    width: 85.3%;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  body .main-content .content .create-plan-button {
+    display: inline-block;
+    margin-top: 20px;
+    width: 217px;
+    height: 56px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 18px;
+    font-weight: $bold;
+    text-decoration: none;
+    background-color: #0E8784;
+    color: #FEFCF7;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 56px;
+    transition: background-color 0.3s ease;
+  }
+  body .main-content .content .create-plan-button:hover {
+    background-color: #095957;
+  }
+  body .coffee-type,
+  body .coffee-selection,
+  body .coffee-type1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   body .coffee-type {
-    margin-top: 5vh;
+    margin-top: 10vh;
   }
   body .coffee-type .our-collection {
     font-size: 40px;
+    background: linear-gradient(to bottom, #83888F, transparent);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: $bold;
   }
   body .coffee-type .coffee-selection {
     margin: 0;
+    color: #333D4B;
   }
   body .coffee-type .coffee-selection .coffee-img {
     width: 40vw;
@@ -258,31 +313,43 @@ body .how .step-2 {
   }
   body .coffee-type .coffee-selection .coffee-name {
     font-size: 24px;
+    line-height: 32px;
+    font-weight: $bold;
   }
   body .coffee-type .coffee-selection .coffee-info {
     width: 75vw;
     text-align: center;
     font-size: 15px;
+    line-height: 25px;
   }
   body .why-us {
-    width: 90vw;
+    width: 100%;
     height: 900px;
     position: relative;
-    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: start;
+    background-color: #2C343E;
+    margin-top: 10vh;
+    border-radius: $border-radius;
   }
   body .why-us .why {
-    margin: 2vh;
-    width: 80%;
+    color: #FEFCF7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 85%;
   }
   body .why-us .why h2 {
-    font-family: "Fraunces", sans-serif;
     font-size: 24px;
     line-height: 24px;
     margin-top: 5vh;
   }
   body .why-us .why p {
-    width: 70vw;
-    font-family: "Barlow", sans-serif;
     font-size: 15px;
     line-height: 25px;
   }
@@ -294,11 +361,16 @@ body .how .step-2 {
     text-align: center;
     width: 100%;
     position: absolute;
-    top: -45%;
+    top: -42%;
+    transform: translateY(50%);
     z-index: 2;
   }
   body .why-us .arguments .argument-1 {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   body .why-us .arguments .argument-1.argument-1:first-child {
     margin-top: 2vh;
@@ -311,11 +383,22 @@ body .how .step-2 {
     height: 380px;
     margin-top: 3vh;
     text-align: center;
+    background-color: #0E8784;
+    border-radius: 5px;
+    color: #FEFCF7;
   }
   body .why-us .arguments .argument-1 .argument img {
     width: 70px;
     height: 70px;
     margin-top: 10vh;
+  }
+  body .why-us .arguments .argument-1 .argument h3 {
+    margin-top: 5vh;
+    font-size: 24px;
+  }
+  body .why-us .arguments .argument-1 .argument p {
+    font-size: 15px;
+    width: 80%;
   }
   body .how {
     display: flex;
@@ -323,21 +406,23 @@ body .how .step-2 {
     justify-content: center;
     align-items: center;
     margin-top: 95vh;
-    margin-left: 0;
     text-align: center;
     width: 100%;
   }
   body .how .line-container {
     display: none;
   }
-  body .how h3, body .how .number, body .how .step-1 {
-    font-family: "Fraunces", sans-serif;
+  body .how h3 {
+    font-weight: $bold;
     font-size: 24px;
     color: #83888F;
   }
   body .how .do-steps {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: start;
     gap: 15px;
   }
   body .how .do-steps .step {
@@ -346,26 +431,42 @@ body .how .step-2 {
     justify-content: center;
     width: 100%;
   }
-  body .how .do-steps .step .number, body .how .do-steps .step .step-1 {
+  body .how .do-steps .step .number {
+    font-family: "Fraunces", sans-serif;
+    font-weight: $bold;
     font-size: 72px;
+    line-height: 72px;
     color: #FDD6BA;
-    font-weight: bold;
   }
   body .how .do-steps .step .step-1 {
     color: #333D4B;
     font-size: 28px;
     line-height: 28px;
+    font-weight: $bold;
     width: 100%;
   }
   body .how .do-steps .step .step-2 {
-    font-family: "Barlow", sans-serif;
     font-size: 15px;
     line-height: 25px;
-    font-weight: bold;
-    width: 95%;
+    width: 100%;
   }
   body .how .create-plan-button {
-    align-self: center;
-    margin-top: 10vh;
+    display: inline-block;
+    margin-top: 20px;
+    width: 217px;
+    height: 56px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 18px;
+    font-weight: $bold;
+    text-decoration: none;
+    background-color: #0E8784;
+    color: #FEFCF7;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 56px;
+    transition: background-color 0.3s ease;
+  }
+  body .how .create-plan-button:hover {
+    background-color: #095957;
   }
 }/*# sourceMappingURL=main.css.map */

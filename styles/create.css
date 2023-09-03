@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -9,159 +15,368 @@ body {
   background-color: #FEFCF7;
 }
 
-body {
-  margin: 30px 50px 120px;
-}
-body .create-plan {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-body h2 {
+h1, h2, h3, h4 {
   font-family: "Fraunces", sans-serif;
-}
-body p {
-  font-family: "Barlow", sans-serif;
-}
-body .create-plan,
-body .pick {
-  border-radius: 10px;
-}
-body .create-plan {
-  background-image: url("../assets/create/background-d.jpg");
-  width: 100%;
-  height: 450px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 30px;
-  color: #FEFCF7;
-  padding: 55px;
-}
-body .create-plan .create-text {
-  width: 445px;
-  height: 182px;
-}
-body .create-plan .create-text h2 {
-  margin: 0;
-  width: 485px;
-  font-size: 72px;
-  line-height: 72px;
-}
-body .create-plan .create-text p {
-  width: 445px;
-  font-size: 16px;
-  line-height: 26px;
-}
-body .pick {
-  width: 100%;
-  height: 653px;
-  background-color: #2C343E;
-  margin-top: 20vh;
-}
-body .pick .line-step-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 1045px;
-  height: 454px;
-  gap: 68px;
-  position: relative;
-  top: -50%;
-  left: -50%;
-  transform: translate(65%, 90%);
-}
-body .pick .line-step-container .line-container {
-  display: flex;
-  align-items: center;
-  width: 75%;
-  position: relative;
-}
-body .pick .line-step-container .line-container .circle {
-  width: 31px;
-  height: 31px;
-  border-radius: 50%;
-  border: 2px solid #0E8784;
-  background-color: transparent;
-  position: relative;
-  z-index: 1;
-}
-body .pick .line-step-container .line-container .line {
-  z-index: 2;
-  flex-grow: 1;
-  height: 2px;
-  background-color: #FDD6BA;
-}
-body .pick .line-step-container .steps {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: start;
-  width: 100%;
-}
-body .pick .line-step-container .steps .step-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 27.27%;
-  height: 356px;
-  font-family: "Fraunces", sans-serif;
-  color: #FEFCF7;
-}
-body .pick .line-step-container .steps .step-1 .number {
-  font-weight: bold;
-  font-size: 72px;
-  line-height: 72px;
-  color: #FDD6BA;
-}
-body .pick .line-step-container .steps .step-1 h3 {
-  width: 90%;
-  font-size: 32px;
-  line-height: 36px;
-}
-body .pick .line-step-container .steps .step-1 p {
-  font-family: "Barlow", sans-serif;
-  font-size: 16px;
-  line-height: 26px;
 }
 
+p {
+  font-family: "Barlow", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  min-width: 272px;
+  max-width: 540px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.modal-header {
+  background-color: #2C343E;
+  padding: 1rem 1.5rem;
+  color: #FEFCF7;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.modal-main {
+  padding: 24px 24px 16px;
+  background-color: #FEFCF7;
+}
+
+@media (min-width: 1000px) {
+  body {
+    margin: 2.5rem 5rem;
+  }
+  body .create-plan,
+  body .line-step-container,
+  body .step-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body fieldset.create-plan-options {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+  body h2,
+  body h3,
+  body h4,
+  body .number {
+    font-family: "Fraunces", sans-serif;
+  }
+  body .create-plan,
+  body .pick {
+    border-radius: 10px;
+  }
+  body .create-plan {
+    background-image: url("../assets/create/background-d.jpg");
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+    color: #FEFCF7;
+    padding: 100px;
+  }
+  body .create-plan .create-text {
+    width: 34.76%;
+  }
+  body .create-plan .create-text h2 {
+    font-size: 72px;
+    line-height: 72px;
+  }
+  body .create-plan .create-text p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  body .pick {
+    width: 100%;
+    height: 653px;
+    background-color: #2C343E;
+    margin-top: 20vh;
+  }
+  body .pick .line-step-container {
+    width: 81.64%;
+    gap: 68px;
+    position: relative;
+    top: -50%;
+    left: -50%;
+    transform: translate(65%, 90%);
+  }
+  body .pick .line-step-container .line-container {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    position: relative;
+  }
+  body .pick .line-step-container .line-container .circle {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 2px solid #0E8784;
+    background-color: transparent;
+    position: relative;
+  }
+  body .pick .line-step-container .line-container .circle.circle-start {
+    margin-right: -16px;
+  }
+  body .pick .line-step-container .line-container .circle.circle-middle {
+    margin-right: -31px;
+  }
+  body .pick .line-step-container .line-container .circle.circle-end {
+    margin-left: -16px;
+  }
+  body .pick .line-step-container .line-container .line {
+    z-index: -1;
+    flex-grow: 1;
+    height: 2px;
+    background-color: #FDD6BA;
+  }
+  body .pick .line-step-container .steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+  }
+  body .pick .line-step-container .steps .step-1 {
+    justify-content: space-evenly;
+    width: 27.27%;
+    height: 356px;
+    color: #FEFCF7;
+  }
+  body .pick .line-step-container .steps .step-1 .number {
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FDD6BA;
+  }
+  body .pick .line-step-container .steps .step-1 h3 {
+    width: 90%;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  body .pick .line-step-container .steps .step-1 p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  body section.subscription {
+    width: 81.64%;
+    margin-left: 9.18%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  body section.subscription .create-plan-nav {
+    width: 24.4%;
+  }
+  body section.subscription .create-plan-nav .create-plan-nav-item {
+    width: 100%;
+    padding: 24px 0;
+    counter-increment: subscription-form-nav;
+    opacity: 0.5;
+    font-weight: 700;
+  }
+  body section.subscription .create-plan-nav .create-plan-nav-item:not(:last-of-type) {
+    border-bottom: 1px solid #83888F;
+  }
+  body section.subscription .create-plan-nav .create-plan-nav-item::before {
+    content: "0" counter(subscription-form-nav);
+    margin-right: 24px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    opacity: 0.5;
+  }
+  body section.subscription .create-plan-nav .create-plan-nav-item:hover {
+    opacity: 1;
+  }
+  body section.subscription .create-plan-nav .create-plan-nav-item .create-plan-nav-item-link {
+    font-family: "Fraunces", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #83888F;
+    transition: all 200ms ease-in-out;
+  }
+  body section.subscription .create-plan-nav .create-plan-nav-item .create-plan-nav-item-link:focus {
+    outline: 0;
+  }
+  body section.subscription .create-plan-nav .create-plan-nav-item .create-plan-nav-item-link:active {
+    color: #333D4B;
+  }
+  body section.subscription .accordion-toggle {
+    width: 69.85%;
+  }
+  body section.subscription .accordion-toggle .preferences {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #83888F;
+    text-align: left;
+  }
+  body section.subscription .accordion-toggle .preferences h3 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  body section.subscription .accordion-toggle .create-plan-options {
+    border: none;
+    background-color: transparent;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    gap: 20px;
+  }
+  body section.subscription .accordion-toggle .create-plan-options legend {
+    display: none;
+  }
+  body section.subscription .accordion-toggle .create-plan-options input[type=radio] {
+    display: none;
+  }
+  body section.subscription .accordion-toggle .create-plan-options input[type=radio]:checked + label {
+    background-color: #0E8784;
+    color: #FEFCF7;
+  }
+  body section.subscription .accordion-toggle .create-plan-options .create-plan-label {
+    width: 31.23%;
+    height: -moz-max-content;
+    height: max-content;
+    background-color: #F4F1EB;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Fraunces", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+    font-weight: 700;
+    padding: 1.5rem;
+  }
+  body section.subscription .accordion-toggle .create-plan-options .create-plan-label:hover {
+    background-color: #FDD6BA;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  }
+  body section.subscription .accordion-toggle .create-plan-options .create-plan-label .create-plan-details {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  body section.subscription .accordion-toggle .active .create-plan-icon {
+    transition: all 200ms ease-in-out;
+    transform: rotate(-180deg);
+  }
+  body section.subscription .form-deliveries-submit .order-summary {
+    width: 100%;
+    background-color: #2C343E;
+    border-radius: 10px;
+    margin-top: 10vh;
+    padding: 1.5rem 2.5rem;
+  }
+  body section.subscription .form-deliveries-submit .order-summary .order-summary-heading {
+    width: 85.32%;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 26px;
+    color: #F4F1EB;
+  }
+  body section.subscription .form-deliveries-submit .order-summary h3 {
+    width: 85.32%;
+    color: #FEFCF7;
+    font-size: 24px;
+    line-height: 40px;
+  }
+  body section.subscription .form-deliveries-submit .order-summary h3 .order-choice {
+    color: #0E8784;
+    text-transform: capitalize;
+  }
+  body section.subscription .form-deliveries-submit .create-plan-submit {
+    display: inline-block;
+    margin-top: 20px;
+    width: 217px;
+    height: 56px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #0E8784;
+    color: #FEFCF7;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 56px;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 10vh;
+    float: right;
+  }
+  body section.subscription .form-deliveries-submit .create-plan-submit:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  body section.subscription .form-deliveries-submit .create-plan-submit:disabled {
+    background-color: #E2DEDB;
+    border: none;
+  }
+}
 @media (max-width: 480px) {
   body {
     margin: 30px 6.4% 10vh;
   }
   body .create-plan,
   body .pick,
-  body .steps {
+  body .steps,
+  body .step-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  body h2,
-  body h3,
-  body h4 {
-    font-family: "Fraunces", sans-serif;
-  }
-  body p {
-    font-family: "Barlow", sans-serif;
-  }
   body .create-plan {
     margin-top: 5vh;
     background-image: url("../assets/create/background.jpg");
+    width: 100%;
     height: 400px;
     background-size: cover;
-    background-position: 60%;
-    padding: 0;
     border-radius: 10px;
     color: #FEFCF7;
   }
   body .create-plan .create-text {
     width: 85.32%;
-  }
-  body .create-plan .create-text h2,
-  body .create-plan .create-text p {
-    width: 100%;
   }
   body .create-plan .create-text h2 {
     font-size: 28px;
@@ -181,82 +396,153 @@ body .pick .line-step-container .steps .step-1 p {
   }
   body .pick .line-step-container {
     width: 87.2%;
-    top: 0;
-    left: 0;
-    transform: translate(0, 0);
   }
   body .pick .line-step-container .line-container {
     display: none;
   }
   body .pick .line-step-container .steps {
-    width: 327px;
-    height: 869px;
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
     justify-content: space-evenly;
-    text-align: center;
+    color: #FEFCF7;
     gap: 50px;
   }
-  body .pick .line-step-container .steps .step-1 {
-    width: 100%;
-    height: 252px;
-  }
-  body .pick .line-step-container .steps .step-1 h3,
-  body .pick .line-step-container .steps .step-1 p {
-    color: #FEFCF7;
-  }
-  body .pick .line-step-container .steps .step-1 .number {
+  body .pick .line-step-container .steps .number {
     font-family: "Fraunces", sans-serif;
+    font-weight: 700;
     font-size: 72px;
     line-height: 72px;
-    font-weight: bold;
     color: #FDD6BA;
   }
-  body .pick .line-step-container .steps .step-1 h3 {
+  body .pick .line-step-container .steps h3 {
     font-size: 28px;
     line-height: 32px;
   }
-  body .pick .line-step-container .steps .step-1 p {
+  body .pick .line-step-container .steps p {
     font-size: 15px;
     line-height: 25px;
   }
-  body .list {
-    margin-top: 15vh;
-    width: 328px;
+  body section.subscription {
+    margin-top: 10vh;
   }
-  body .list .accordion .accordion-toggle {
-    font-family: "Fraunces", sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 28px;
+  body section.subscription .create-plan-nav {
+    display: none;
+  }
+  body section.subscription .preferences {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
     color: #83888F;
-    width: 240px;
-    height: 56px;
+    text-align: left;
   }
-  body .list .accordion .details {
+  body section.subscription .preferences h3 {
+    width: 73.17%;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  body section.subscription .active .create-plan-icon {
+    transition: all 200ms ease-in-out;
+    transform: rotate(-180deg);
+  }
+  body section.subscription .create-plan-options {
+    border: none;
+    background-color: #FEFCF7;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+  }
+  body section.subscription .create-plan-options legend {
+    display: none;
+  }
+  body section.subscription .create-plan-options input[type=radio] {
+    display: none;
+  }
+  body section.subscription .create-plan-options input[type=radio]:checked + label {
+    background-color: #0E8784;
+    color: #FEFCF7;
+  }
+  body section.subscription .create-plan-options .create-plan-label {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    background-color: #F4F1EB;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    height: 452px;
-    gap: 10px;
-    color: #333D4B;
-  }
-  body .list .accordion .details div {
-    width: 100%;
-    height: 140px;
-    border-radius: 10px;
-    padding: 0 20px;
-    background-color: #F4F1EB;
-  }
-  body .list .accordion .details div h4 {
+    justify-content: center;
+    font-family: "Fraunces", sans-serif;
     font-size: 24px;
     line-height: 32px;
-    margin: 20px 0;
+    color: #333D4B;
+    font-weight: 700;
+    padding: 1.5rem;
   }
-  body .list .accordion .details div p {
+  body section.subscription .create-plan-options .create-plan-label .create-plan-details {
+    margin-top: 1rem;
     font-family: "Barlow", sans-serif;
     font-size: 16px;
     line-height: 26px;
-    width: 85%;
-    font-weight: bold;
+  }
+  body .form-deliveries-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .form-deliveries-submit .order-summary {
+    width: 100%;
+    background-color: #2C343E;
+    border-radius: 10px;
+    margin-top: 15vh;
+    padding: 1.5rem 2rem 1.5rem;
+  }
+  body .form-deliveries-submit .order-summary .order-summary-heading {
+    width: 85.32%;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 26px;
+    color: #F4F1EB;
+  }
+  body .form-deliveries-submit .order-summary h3 {
+    width: 85.32%;
+    color: #FEFCF7;
+    font-size: 24px;
+    line-height: 40px;
+  }
+  body .form-deliveries-submit .order-summary h3 .order-choice {
+    color: #0E8784;
+    text-transform: capitalize;
+  }
+  body .form-deliveries-submit .create-plan-submit {
+    display: inline-block;
+    margin-top: 20px;
+    width: 217px;
+    height: 56px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #0E8784;
+    color: #FEFCF7;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 56px;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 10vh;
+  }
+  body .form-deliveries-submit .create-plan-submit:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  body .form-deliveries-submit .create-plan-submit:disabled {
+    background-color: #E2DEDB;
+    border: none;
   }
 }/*# sourceMappingURL=create.css.map */
