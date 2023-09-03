@@ -71,10 +71,29 @@
 
     </section>
 
-    <section class="subbscription">
+    <section class="subscription">
+      <nav class="create-plan-nav" >
+        <ol>
+          <li class="create-plan-nav-item" >      
+            <a href="#form-preferences" class="create-plan-nav-item-link" >Preferences</a>
+          </li>
+          <li class="create-plan-nav-item" >
+            <a href="#form-bean-type" class="create-plan-nav-item-link" >Bean type</a>
+          </li>
+          <li class="create-plan-nav-item">
+            <a href="#form-quantity" class="create-plan-nav-item-link" >Quantity</a>
+          </li>
+          <li class="create-plan-nav-item">
+            <a href="#form-grind" class="create-plan-nav-item-link" >Grind option</a>
+          </li>
+          <li class="create-plan-nav-item">
+            <a href="#form-deliveries" class="create-plan-nav-item-link" >Deliveries</a>
+          </li>
+        </ol>      
+      </nav>
       <form class="accordion-toggle" id="subscription-form">
         <div>
-          <button type="button" id="form-preferences" class="prefferences js-accordion-toggle">
+          <button type="button" id="form-preferences" class="preferences js-accordion-toggle">
             <h3 class="create-plan-text">How do you drink your coffee?</h3>
             <span>
               <img src="../assets/create/icon-arrow.svg" alt="" class="create-plan-icon">
@@ -84,14 +103,14 @@
             <legend class="">Choose coffee preference</legend>
 
             <input type="radio" name="preferences" value="capsules" id="capsule"
-              class="create-plan-radio js-capsule " tabindex="-1" required>
+              class="create-plan-radio js-capsule "  required>
             <label for="capsule" class="create-plan-label">Capsule
               <span class="create-plan-details">
                 Compatible with Nespresso systems and similar brewers
               </span>
             </label>
 
-            <input type="radio" name="preferences" value="filter" id="filter" class="create-plan-radio " tabindex="-1" required>
+            <input type="radio" name="preferences" value="filter" id="filter" class="create-plan-radio "  required>
             <label for="filter" class="create-plan-label">Filter
               <span class="create-plan-details">
                 For pour over or drip methods like Aeropress, Chemex, and V60
@@ -99,7 +118,7 @@
             </label>
 
             <input type="radio" name="preferences" value="espresso" id="espresso"
-              class="create-plan-radio " tabindex="-1" required>
+              class="create-plan-radio "  required>
             <label for="espresso" class="create-plan-label">Espresso
               <span class="create-plan-details">Dense and finely ground beans for an intense, flavorful
                 experience</span>
@@ -108,7 +127,7 @@
           </fieldset>
         </div>
         <div>
-          <button type="button" id="form-bean-type" aria-controls="bean-type" class="prefferences js-accordion-toggle">
+          <button type="button" id="form-bean-type" aria-controls="bean-type" class="preferences js-accordion-toggle">
             <h3 class="create-plan-text">What type of coffee?</h3>
             <span>
               <img src="../assets/create/icon-arrow.svg" alt="" class="create-plan-icon">
@@ -143,7 +162,7 @@
           </fieldset>
         </div>
         <div>
-          <button type="button" id="form-quantity" class="prefferences js-accordion-toggle">
+          <button type="button" id="form-quantity" class="preferences js-accordion-toggle">
             <h3 class="create-plan-text">How much would you like?</h3>
             <span><img src="../assets/create/icon-arrow.svg" alt="" class="create-plan-icon"></span>
           </button>
@@ -172,7 +191,7 @@
           </fieldset>
         </div>
         <div>
-          <button type="button" id="form-grind" class="prefferences js-accordion-toggle js-grind-toggle">
+          <button type="button" id="form-grind" class="preferences js-accordion-toggle js-grind-toggle">
             <h3 class="create-plan-text">Want us to grind them?</h3>
             <span><img src="../assets/create/icon-arrow.svg" alt="" class="create-plan-icon"></span>
           </button>
@@ -199,8 +218,8 @@
 
           </fieldset>
         </div>
-        <div>
-          <button type="button" id="form-deliveries" class="prefferences js-accordion-toggle">
+        <div class="form-deliveries-submit">
+          <button type="button" id="form-deliveries" class="preferences js-accordion-toggle">
             <h3 class="create-plan-text">How often should we deliver?</h3>
             <span><img src="../assets/create/icon-arrow.svg" alt="" class="create-plan-icon"></span>
           </button>
@@ -253,7 +272,7 @@
               </h3>
             </div>
           </div>
-          <button type="button" class="button button-disabled create-plan__form__submit js-form-confirm" disabled>Create my plan!</button>
+          <button type="button" class="button  create-plan-submit js-form-confirm" disabled>Create my plan!</button>
       </form>
       
     </section>
@@ -261,6 +280,23 @@
 
 
   </main>
+  <div class="overlay  js-overlay"></div>
+    <div class="modal  js-modal">
+     
+      <div class="modal-header">
+        <h3 class="modal-heading">Order Summary</h3>
+      </div>
+      <div class="modal-main">
+        <div class="modal-summary js-modal-summary">
+
+        </div>
+        <div class="modal-text">
+          <p>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout.</p>
+        </div>
+        <button type="submit" form="subscription-form" class="button modal-btn js-form-submit">Checkout <p class="modal__price">$<span class="js-total"></span> / mo</p></button>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <img src="../assets/footer/logo-f.png">
@@ -281,4 +317,6 @@
   <script src="../js/functions/accordionToggle.js"></script>
   <script src="../js/functions/summary.js"></script>
   <script src="../js/functions/enableButton.js"></script>
+  <script src="../js/functions/modal.js"></script>
+  
 </body>

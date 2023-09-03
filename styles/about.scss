@@ -7,7 +7,7 @@
 
 @media (min-width: 1000px) {
   body {
-    margin: 30px 50px 120px;
+    margin: 2.5rem 5rem;
 
     .about-us,
     .commitment-text {
@@ -37,8 +37,8 @@
       background-repeat: no-repeat;
       background-size: cover;
       margin-top: 30px;
-      border-radius: 10px;
-      color: $text-light;
+      border-radius: $border-radius;
+      color: $light-cream;
       padding: 100px;
 
       h2, p {
@@ -61,7 +61,7 @@
         width: 48.64%;
         height: auto;
         color: $dark-text;
-        font-weight: bold;
+        font-weight: $bold;
 
         
       }
@@ -74,12 +74,12 @@
       width: 100%;
       height: fit-content;
       background-color: $background-color;
-      border-radius: 10px;
+      border-radius: $border-radius;
       margin-top: 25vh;
 
       .quality-text {
         width: 42.18%;
-        color: $text-light;
+        color: $light-cream;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -93,7 +93,7 @@
         top: 50%;
         left: 0;
         transform: translate(0, -15.66%);
-        border-radius: 10px;
+        border-radius: $border-radius;
       }
     }
 
@@ -124,7 +124,7 @@
         .country {
           width: 81.81%;
           color: $dark-text;
-          font-weight: bold;
+          font-weight: $bold;
           h4 {
             
             font-size: $size32;
@@ -183,7 +183,7 @@
       height: 400px;
       background-size: cover;
       padding: 0;
-      color: $text-light;
+      color: $light-cream;
 
       h2,
       p {
@@ -204,11 +204,11 @@
     .commitment {
       width: 100%;
 
-      font-weight: bold;
+      font-weight: $bold;
       .img-mobile {
         width: 100%;
         height: 400px;
-        border-radius: 10px;
+        border-radius: $border-radius;
       }
 
       .commitment-text {
@@ -232,7 +232,7 @@
       width: 100%;
       height: 509px;
       background-color: $background-color;
-      border-radius: 10px;
+      border-radius: $border-radius;
       margin-top: 25vh;
 
       .img-mobile {
@@ -241,14 +241,14 @@
         top: -50%;
         left: -50%;
         transform: translate(59%, 95%);
-        border-radius: 10px;
+        border-radius: $border-radius;
       }
       .quality-text {
         width: 100%;
         height: 306px;
         background-color: $background-color;
-        border-radius: 10px;
-        color: $text-light;
+        border-radius: $border-radius;
+        color: $light-cream;
 
         h2,
         p {
@@ -290,14 +290,14 @@
           font-size: $size28;
           line-height: $size32;
 
-          font-weight: bold;
+          font-weight: $bold;
         }
         .adress {
           font-family: $barlow-family;
           font-size: $size16;
           line-height: $size26;
 
-          font-weight: bold;
+          font-weight: $bold;
         }
       }
     }

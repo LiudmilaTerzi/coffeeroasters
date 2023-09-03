@@ -35,7 +35,7 @@ header {
           text-decoration: none;
           color: $gradient-color;
           text-transform: uppercase;
-          font-weight: bold;
+          font-weight: $bold;
 
           &:hover {
             color: lighten(#f2f2f2, 20%);
@@ -71,7 +71,7 @@ header {
       left: -100%;
       width: 100%;
       background-color: $dark-background;
-      transition: left $transition-duration ease-in-out;
+      transition: left 0.3s ease-in-out;
 
       ul {
         flex-direction: column;

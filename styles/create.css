@@ -32,9 +32,44 @@ ol, ul {
   padding-inline-start: 0;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  min-width: 272px;
+  max-width: 540px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.modal-header {
+  background-color: #2C343E;
+  padding: 1rem 1.5rem;
+  color: #FEFCF7;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.modal-main {
+  padding: 24px 24px 16px;
+  background-color: #FEFCF7;
+}
+
 @media (min-width: 1000px) {
   body {
-    margin: 30px 50px 120px;
+    margin: 2.5rem 5rem;
   }
   body .create-plan,
   body .line-step-container,
@@ -139,7 +174,7 @@ ol, ul {
   }
   body .pick .line-step-container .steps .step-1 .number {
     font-family: "Fraunces", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 72px;
     line-height: 72px;
     color: #FDD6BA;
@@ -153,13 +188,168 @@ ol, ul {
     font-size: 16px;
     line-height: 26px;
   }
-  body .accordion .accordion-toggle {
+  body section.subscription {
+    width: 81.64%;
+    margin-left: 9.18%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  body section.subscription .create-plan-nav {
+    width: 24.4%;
+  }
+  body section.subscription .create-plan-nav .create-plan-nav-item {
+    width: 100%;
+    padding: 24px 0;
+    counter-increment: subscription-form-nav;
+    opacity: 0.5;
+    font-weight: 700;
+  }
+  body section.subscription .create-plan-nav .create-plan-nav-item:not(:last-of-type) {
+    border-bottom: 1px solid #83888F;
+  }
+  body section.subscription .create-plan-nav .create-plan-nav-item::before {
+    content: "0" counter(subscription-form-nav);
+    margin-right: 24px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    opacity: 0.5;
+  }
+  body section.subscription .create-plan-nav .create-plan-nav-item:hover {
+    opacity: 1;
+  }
+  body section.subscription .create-plan-nav .create-plan-nav-item .create-plan-nav-item-link {
+    font-family: "Fraunces", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #83888F;
+    transition: all 200ms ease-in-out;
+  }
+  body section.subscription .create-plan-nav .create-plan-nav-item .create-plan-nav-item-link:focus {
+    outline: 0;
+  }
+  body section.subscription .create-plan-nav .create-plan-nav-item .create-plan-nav-item-link:active {
+    color: #333D4B;
+  }
+  body section.subscription .accordion-toggle {
+    width: 69.85%;
+  }
+  body section.subscription .accordion-toggle .preferences {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #83888F;
+    text-align: left;
+  }
+  body section.subscription .accordion-toggle .preferences h3 {
     font-size: 40px;
     line-height: 48px;
-    color: #83888F;
   }
-  body .accordion .details {
+  body section.subscription .accordion-toggle .create-plan-options {
+    border: none;
+    background-color: transparent;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    gap: 20px;
+  }
+  body section.subscription .accordion-toggle .create-plan-options legend {
+    display: none;
+  }
+  body section.subscription .accordion-toggle .create-plan-options input[type=radio] {
+    display: none;
+  }
+  body section.subscription .accordion-toggle .create-plan-options input[type=radio]:checked + label {
+    background-color: #0E8784;
+    color: #FEFCF7;
+  }
+  body section.subscription .accordion-toggle .create-plan-options .create-plan-label {
+    width: 31.23%;
+    height: -moz-max-content;
+    height: max-content;
+    background-color: #F4F1EB;
+    border-radius: 10px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Fraunces", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+    font-weight: 700;
+    padding: 1.5rem;
+  }
+  body section.subscription .accordion-toggle .create-plan-options .create-plan-label:hover {
+    background-color: #FDD6BA;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  }
+  body section.subscription .accordion-toggle .create-plan-options .create-plan-label .create-plan-details {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  body section.subscription .accordion-toggle .active .create-plan-icon {
+    transition: all 200ms ease-in-out;
+    transform: rotate(-180deg);
+  }
+  body section.subscription .form-deliveries-submit .order-summary {
+    width: 100%;
+    background-color: #2C343E;
+    border-radius: 10px;
+    margin-top: 10vh;
+    padding: 1.5rem 2.5rem;
+  }
+  body section.subscription .form-deliveries-submit .order-summary .order-summary-heading {
+    width: 85.32%;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 26px;
+    color: #F4F1EB;
+  }
+  body section.subscription .form-deliveries-submit .order-summary h3 {
+    width: 85.32%;
+    color: #FEFCF7;
+    font-size: 24px;
+    line-height: 40px;
+  }
+  body section.subscription .form-deliveries-submit .order-summary h3 .order-choice {
+    color: #0E8784;
+    text-transform: capitalize;
+  }
+  body section.subscription .form-deliveries-submit .create-plan-submit {
+    display: inline-block;
+    margin-top: 20px;
+    width: 217px;
+    height: 56px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #0E8784;
+    color: #FEFCF7;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 56px;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 10vh;
+    float: right;
+  }
+  body section.subscription .form-deliveries-submit .create-plan-submit:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  body section.subscription .form-deliveries-submit .create-plan-submit:disabled {
+    background-color: #E2DEDB;
+    border: none;
   }
 }
 @media (max-width: 480px) {
@@ -212,14 +402,15 @@ ol, ul {
   }
   body .pick .line-step-container .steps {
     width: 100%;
-    height: 869px;
+    height: -moz-max-content;
+    height: max-content;
     justify-content: space-evenly;
     color: #FEFCF7;
     gap: 50px;
   }
   body .pick .line-step-container .steps .number {
     font-family: "Fraunces", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 72px;
     line-height: 72px;
     color: #FDD6BA;
@@ -232,25 +423,33 @@ ol, ul {
     font-size: 15px;
     line-height: 25px;
   }
-  body .subbscription {
+  body section.subscription {
     margin-top: 10vh;
   }
-  body .subbscription button {
+  body section.subscription .create-plan-nav {
+    display: none;
+  }
+  body section.subscription .preferences {
     background: none;
     border: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2rem;
     width: 100%;
     color: #83888F;
     text-align: left;
   }
-  body .subbscription button h3 {
-    width: 240px;
+  body section.subscription .preferences h3 {
+    width: 73.17%;
     font-size: 24px;
     line-height: 28px;
   }
-  body .subbscription .create-plan-options {
+  body section.subscription .active .create-plan-icon {
+    transition: all 200ms ease-in-out;
+    transform: rotate(-180deg);
+  }
+  body section.subscription .create-plan-options {
     border: none;
     background-color: #FEFCF7;
     display: none;
@@ -260,19 +459,20 @@ ol, ul {
     text-align: left;
     gap: 10px;
   }
-  body .subbscription .create-plan-options legend {
+  body section.subscription .create-plan-options legend {
     display: none;
   }
-  body .subbscription .create-plan-options input[type=radio] {
+  body section.subscription .create-plan-options input[type=radio] {
     display: none;
   }
-  body .subbscription .create-plan-options input[type=radio]:checked + label {
+  body section.subscription .create-plan-options input[type=radio]:checked + label {
     background-color: #0E8784;
     color: #FEFCF7;
   }
-  body .subbscription .create-plan-options .create-plan-label {
+  body section.subscription .create-plan-options .create-plan-label {
     width: 100%;
-    height: 140px;
+    height: -moz-max-content;
+    height: max-content;
     background-color: #F4F1EB;
     border-radius: 10px;
     display: flex;
@@ -282,34 +482,67 @@ ol, ul {
     font-size: 24px;
     line-height: 32px;
     color: #333D4B;
-    font-weight: bold;
-    padding: 10px;
+    font-weight: 700;
+    padding: 1.5rem;
   }
-  body .subbscription .create-plan-options .create-plan-label .create-plan-details {
+  body section.subscription .create-plan-options .create-plan-label .create-plan-details {
+    margin-top: 1rem;
     font-family: "Barlow", sans-serif;
     font-size: 16px;
     line-height: 26px;
   }
-  body .order-summary {
+  body .form-deliveries-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .form-deliveries-submit .order-summary {
     width: 100%;
     background-color: #2C343E;
     border-radius: 10px;
-    padding: 20px 30px 20px;
+    margin-top: 15vh;
+    padding: 1.5rem 2rem 1.5rem;
   }
-  body .order-summary .order-summary-heading {
+  body .form-deliveries-submit .order-summary .order-summary-heading {
     width: 85.32%;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 26px;
     color: #F4F1EB;
   }
-  body .order-summary h3 {
+  body .form-deliveries-submit .order-summary h3 {
     width: 85.32%;
     color: #FEFCF7;
     font-size: 24px;
     line-height: 40px;
   }
-  body .order-summary h3 .order-choice {
+  body .form-deliveries-submit .order-summary h3 .order-choice {
     color: #0E8784;
+    text-transform: capitalize;
+  }
+  body .form-deliveries-submit .create-plan-submit {
+    display: inline-block;
+    margin-top: 20px;
+    width: 217px;
+    height: 56px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #0E8784;
+    color: #FEFCF7;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 56px;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 10vh;
+  }
+  body .form-deliveries-submit .create-plan-submit:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  body .form-deliveries-submit .create-plan-submit:disabled {
+    background-color: #E2DEDB;
+    border: none;
   }
 }/*# sourceMappingURL=create.css.map */

@@ -1,25 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap');
 
 // colors
-$primary-color: #333;
-$menu-icon-color: #333D4B;
-$dark-text: #333D4B;
-$dark-background: #2C343E;
-$menu-icon-size: 24px;
-$transition-duration: 0.3s;
-$nav-list-item-color: #83888F;
-$gradient-color: #83888F;
 
-$body-color: #FEFCF7;
+$dark-text: #333D4B;
+$gradient-color: #83888F;
 $green-color: #0E8784;
-$text-light: #FEFCF7;
+$light-cream: #FEFCF7;
 $background-color:#2C343E;
-$light-pink: #FDD6BA;
 $shadow-color: #D8D8D8;
 $light-grey: #F4F1EB;
-$select-text: #FFFFFF;
+$light-orange: #FDD6BA;
+$disabled: #E2DEDB;
+
 $size10: 10px;
 $size15: 15px; 
 $size16: 16px;
@@ -42,4 +36,4 @@ $regular: 400;
 $bold: 700;
 
 // border-radius
-$border-radius: 0.625rem;
+$border-radius: 10px;

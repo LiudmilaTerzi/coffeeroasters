@@ -1,0 +1,37 @@
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    min-width: 272px;
+    max-width: 540px;
+    border-radius: $border-radius;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.modal-header {
+    background-color: $background-color;
+    padding: 1rem 1.5rem;
+    color: $light-cream;
+    font-size: $size40;
+    line-height: $size48;
+}
+
+
+
+.modal-main {
+    padding: 24px 24px 16px;
+    background-color: $light-cream;
+}

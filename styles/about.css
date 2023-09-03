@@ -30,7 +30,7 @@ ol, ul {
 
 @media (min-width: 1000px) {
   body {
-    margin: 30px 50px 120px;
+    margin: 2.5rem 5rem;
   }
   body .about-us,
   body .commitment-text {
@@ -57,7 +57,7 @@ ol, ul {
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 30px;
-    border-radius: 10px;
+    border-radius: $border-radius;
     color: #FEFCF7;
     padding: 100px;
   }
@@ -80,7 +80,7 @@ ol, ul {
     width: 48.64%;
     height: auto;
     color: #333D4B;
-    font-weight: bold;
+    font-weight: $bold;
   }
   body .quality {
     display: flex;
@@ -90,7 +90,7 @@ ol, ul {
     height: -moz-fit-content;
     height: fit-content;
     background-color: #2C343E;
-    border-radius: 10px;
+    border-radius: $border-radius;
     margin-top: 25vh;
   }
   body .quality .quality-text {
@@ -107,7 +107,7 @@ ol, ul {
     top: 50%;
     left: 0;
     transform: translate(0, -15.66%);
-    border-radius: 10px;
+    border-radius: $border-radius;
   }
   body .headquarters {
     display: flex;
@@ -135,7 +135,7 @@ ol, ul {
   body .headquarters .location .country {
     width: 81.81%;
     color: #333D4B;
-    font-weight: bold;
+    font-weight: $bold;
   }
   body .headquarters .location .country h4 {
     font-size: 32px;
@@ -204,12 +204,12 @@ ol, ul {
   }
   body .commitment {
     width: 100%;
-    font-weight: bold;
+    font-weight: $bold;
   }
   body .commitment .img-mobile {
     width: 100%;
     height: 400px;
-    border-radius: 10px;
+    border-radius: $border-radius;
   }
   body .commitment .commitment-text {
     width: 100%;
@@ -228,7 +228,7 @@ ol, ul {
     width: 100%;
     height: 509px;
     background-color: #2C343E;
-    border-radius: 10px;
+    border-radius: $border-radius;
     margin-top: 25vh;
   }
   body .quality .img-mobile {
@@ -237,13 +237,13 @@ ol, ul {
     top: -50%;
     left: -50%;
     transform: translate(59%, 95%);
-    border-radius: 10px;
+    border-radius: $border-radius;
   }
   body .quality .quality-text {
     width: 100%;
     height: 306px;
     background-color: #2C343E;
-    border-radius: 10px;
+    border-radius: $border-radius;
     color: #FEFCF7;
   }
   body .quality .quality-text h2,
@@ -281,12 +281,12 @@ ol, ul {
   body .headquarters .location .country h4 {
     font-size: 28px;
     line-height: 32px;
-    font-weight: bold;
+    font-weight: $bold;
   }
   body .headquarters .location .adress {
     font-family: "Barlow", sans-serif;
     font-size: 16px;
     line-height: 26px;
-    font-weight: bold;
+    font-weight: $bold;
   }
 }/*# sourceMappingURL=about.css.map */

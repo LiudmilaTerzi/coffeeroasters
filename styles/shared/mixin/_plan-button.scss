@@ -7,16 +7,16 @@
     height: 56px;
     font-family: $fraunces-family;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: $bold;
     text-decoration: none;
     background-color: $green-color;
-    color: $text-light;
+    color: $light-cream;
     border-radius: 5px;
     text-align: center;
     line-height: 56px;
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: darken(#0e8784, 10%);
+      box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
     }
   }

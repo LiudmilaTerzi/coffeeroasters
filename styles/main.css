@@ -48,7 +48,7 @@ ol, ul {
   }
   body .main-content {
     background-image: url("../assets/home/Bitmap.png");
-    border-radius: 10px;
+    border-radius: $border-radius;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,7 +80,7 @@ ol, ul {
     height: 56px;
     font-family: "Fraunces", sans-serif;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: $bold;
     text-decoration: none;
     background-color: #0E8784;
     color: #FEFCF7;
@@ -96,14 +96,14 @@ ol, ul {
     background: linear-gradient(to bottom, #83888F, transparent);
     -webkit-background-clip: text;
     color: transparent;
-    font-weight: bold;
+    font-weight: $bold;
     font-size: 150px;
   }
   body .coffee-type .coffee-selection {
     display: flex;
     gap: 1vw;
     margin-top: -200px;
-    font-weight: bold;
+    font-weight: $bold;
   }
   body .coffee-type .coffee-selection .coffee-type1 {
     width: 255px;
@@ -120,7 +120,7 @@ ol, ul {
     justify-content: start;
     background-color: #2C343E;
     margin-top: 20vh;
-    border-radius: 10px;
+    border-radius: $border-radius;
     height: 577px;
   }
   body .why-us .why {
@@ -203,7 +203,7 @@ ol, ul {
   }
   body section.how .do-steps .step h2.number {
     font-family: "Fraunces", sans-serif;
-    font-weight: bold;
+    font-weight: $bold;
     font-size: 72px;
     line-height: 72px;
     color: #FDD6BA;
@@ -211,7 +211,7 @@ ol, ul {
   body section.how h3,
   body section.how .step-1,
   body section.how .step-2 {
-    font-weight: bold;
+    font-weight: $bold;
   }
   body section.how h3 {
     font-size: 24px;
@@ -241,7 +241,7 @@ ol, ul {
     height: 500px;
     background-size: cover;
     background-position: 68% 20%;
-    border-radius: 10px;
+    border-radius: $border-radius;
   }
   body .main-content .content {
     display: flex;
@@ -271,7 +271,7 @@ ol, ul {
     height: 56px;
     font-family: "Fraunces", sans-serif;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: $bold;
     text-decoration: none;
     background-color: #0E8784;
     color: #FEFCF7;
@@ -299,7 +299,7 @@ ol, ul {
     background: linear-gradient(to bottom, #83888F, transparent);
     -webkit-background-clip: text;
     color: transparent;
-    font-weight: bold;
+    font-weight: $bold;
   }
   body .coffee-type .coffee-selection {
     margin: 0;
@@ -314,7 +314,7 @@ ol, ul {
   body .coffee-type .coffee-selection .coffee-name {
     font-size: 24px;
     line-height: 32px;
-    font-weight: bold;
+    font-weight: $bold;
   }
   body .coffee-type .coffee-selection .coffee-info {
     width: 75vw;
@@ -333,7 +333,7 @@ ol, ul {
     justify-content: start;
     background-color: #2C343E;
     margin-top: 10vh;
-    border-radius: 10px;
+    border-radius: $border-radius;
   }
   body .why-us .why {
     color: #FEFCF7;
@@ -413,7 +413,7 @@ ol, ul {
     display: none;
   }
   body .how h3 {
-    font-weight: bold;
+    font-weight: $bold;
     font-size: 24px;
     color: #83888F;
   }
@@ -433,7 +433,7 @@ ol, ul {
   }
   body .how .do-steps .step .number {
     font-family: "Fraunces", sans-serif;
-    font-weight: bold;
+    font-weight: $bold;
     font-size: 72px;
     line-height: 72px;
     color: #FDD6BA;
@@ -442,7 +442,7 @@ ol, ul {
     color: #333D4B;
     font-size: 28px;
     line-height: 28px;
-    font-weight: bold;
+    font-weight: $bold;
     width: 100%;
   }
   body .how .do-steps .step .step-2 {
@@ -457,7 +457,7 @@ ol, ul {
     height: 56px;
     font-family: "Fraunces", sans-serif;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: $bold;
     text-decoration: none;
     background-color: #0E8784;
     color: #FEFCF7;
