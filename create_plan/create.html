@@ -72,24 +72,24 @@
     </section>
 
     <section class="subscription">
-      <nav class="create-plan-nav" >
+      <nav class="create-plan-nav">
         <ol>
-          <li class="create-plan-nav-item" >      
-            <a href="#form-preferences" class="create-plan-nav-item-link" >Preferences</a>
-          </li>
-          <li class="create-plan-nav-item" >
-            <a href="#form-bean-type" class="create-plan-nav-item-link" >Bean type</a>
+          <li class="create-plan-nav-item">
+            <a href="#form-preferences" class="create-plan-nav-item-link">Preferences</a>
           </li>
           <li class="create-plan-nav-item">
-            <a href="#form-quantity" class="create-plan-nav-item-link" >Quantity</a>
+            <a href="#form-bean-type" class="create-plan-nav-item-link">Bean type</a>
           </li>
           <li class="create-plan-nav-item">
-            <a href="#form-grind" class="create-plan-nav-item-link" >Grind option</a>
+            <a href="#form-quantity" class="create-plan-nav-item-link">Quantity</a>
           </li>
           <li class="create-plan-nav-item">
-            <a href="#form-deliveries" class="create-plan-nav-item-link" >Deliveries</a>
+            <a href="#form-grind" class="create-plan-nav-item-link">Grind option</a>
           </li>
-        </ol>      
+          <li class="create-plan-nav-item">
+            <a href="#form-deliveries" class="create-plan-nav-item-link">Deliveries</a>
+          </li>
+        </ol>
       </nav>
       <form class="accordion-toggle" id="subscription-form">
         <div>
@@ -102,23 +102,22 @@
           <fieldset class="create-plan-options" id="coffee-preferences">
             <legend class="">Choose coffee preference</legend>
 
-            <input type="radio" name="preferences" value="capsules" id="capsule"
-              class="create-plan-radio js-capsule "  required>
+            <input type="radio" name="preferences" value="capsules" id="capsule" class="create-plan-radio js-capsule "
+              required>
             <label for="capsule" class="create-plan-label">Capsule
               <span class="create-plan-details">
                 Compatible with Nespresso systems and similar brewers
               </span>
             </label>
 
-            <input type="radio" name="preferences" value="filter" id="filter" class="create-plan-radio "  required>
+            <input type="radio" name="preferences" value="filter" id="filter" class="create-plan-radio " required>
             <label for="filter" class="create-plan-label">Filter
               <span class="create-plan-details">
                 For pour over or drip methods like Aeropress, Chemex, and V60
               </span>
             </label>
 
-            <input type="radio" name="preferences" value="espresso" id="espresso"
-              class="create-plan-radio "  required>
+            <input type="radio" name="preferences" value="espresso" id="espresso" class="create-plan-radio " required>
             <label for="espresso" class="create-plan-label">Espresso
               <span class="create-plan-details">Dense and finely ground beans for an intense, flavorful
                 experience</span>
@@ -136,16 +135,15 @@
           <fieldset class="create-plan-options" id="bean-type">
             <legend class="">Choose bean type</legend>
 
-            <input type="radio" name="bean-type" value="single origin" id="single-origin"
-              class="create-plan-radio "  required>
+            <input type="radio" name="bean-type" value="single origin" id="single-origin" class="create-plan-radio "
+              required>
             <label for="single-origin" class="create-plan-label">Single origin
               <span class="create-plan-details">
                 Distinct, high quality coffee from a specific family-owned farm
               </span>
             </label>
 
-            <input type="radio" name="bean-type" value="decaf" id="decaf" class="create-plan-radio "
-             required>
+            <input type="radio" name="bean-type" value="decaf" id="decaf" class="create-plan-radio " required>
             <label for="decaf" class="create-plan-label">Decaf
               <span class="create-plan-details">
                 Just like regular coffee, except the caffeine has been removed
@@ -169,21 +167,21 @@
           <fieldset class="create-plan-options" id="coffee-quantity">
             <legend class="">Choose quantity</legend>
 
-            <input type="radio" name="quantity" value="250g" id="250g" class="create-plan-radio " required>
+            <input type="radio" name="quantity" value="250" id="250g" class="create-plan-radio " required>
             <label for="250g" class="create-plan-label">250g
               <span class="create-plan-details">
                 Perfect for the solo drinker. Yields about 12 delicious cups.
               </span>
             </label>
 
-            <input type="radio" name="quantity" value="500g" id="500g" class="create-plan-radio " required>
+            <input type="radio" name="quantity" value="500" id="500g" class="create-plan-radio " required>
             <label for="500g" class="create-plan-label">500g
               <span class="create-plan-details">
                 Perfect option for a couple. Yields about 40 delectable cups.
               </span>
             </label>
 
-            <input type="radio" name="quantity" value="1000g" id="1000g" class="create-plan-radio " required>
+            <input type="radio" name="quantity" value="1000" id="1000g" class="create-plan-radio " required>
             <label for="1000g" class="create-plan-label">1000g
               <span class="create-plan-details">Perfect for offices and events. Yields about 90 delightful cups.</span>
             </label>
@@ -198,19 +196,19 @@
           <fieldset class="create-plan-options" id="grind">
             <legend class="">Choose type of grind</legend>
 
-            <input type="radio" name="grind" value="wholebean" id="wholebean"
-              class="create-plan-radio  js-grind-input" required>
+            <input type="radio" name="grind" value="wholebean" id="wholebean" class="create-plan-radio  js-grind-input"
+              required>
             <label for="wholebean" class="create-plan-label">Wholebean<span class="create-plan-details">Best
                 choice if you cherish the full sensory experience</span></label>
 
-            <input type="radio" name="grind" value="filter" id="filter-grind"
-              class="create-plan-radio  js-grind-input" required>
+            <input type="radio" name="grind" value="filter" id="filter-grind" class="create-plan-radio  js-grind-input"
+              required>
             <label for="filter-grind" class="create-plan-label">Filter<span class="create-plan-details">For
                 drip or pour-over coffee methods such as V60 or Aeropress</span>
             </label>
 
-            <input type="radio" name="grind" value="cafetiére" id="cafetiere"
-              class="create-plan-radio  js-grind-input" required>
+            <input type="radio" name="grind" value="cafetiére" id="cafetiere" class="create-plan-radio  js-grind-input"
+              required>
             <label for="cafetiere" class="create-plan-label">Cafetiére
               <span class="create-plan-details">Coarse ground beans specially suited for french press coffee
               </span>
@@ -226,30 +224,29 @@
           <fieldset class="create-plan-options" id="delivery">
             <legend class="">Choose delivery frequency</legend>
 
-            <input type="radio" name="delivery" value="every week" id="every-week"
-              class="create-plan-radio " required>
+            <input type="radio" name="delivery" value="every week" id="every-week" class="every week create-plan-radio " required>
             <label for="every-week" class="create-plan-label">Every week
               <span class="create-plan-details">
-                <span class="js-weekly-price"></span>
-                $7.20 per shipment. Includes free first-class shipping.
+                <span class="js-price js-weekly-price">$</span>
+                per shipment. Includes free first-class shipping.
               </span>
             </label>
 
-            <input type="radio" name="delivery" value="every 2 weeks" id="every-2-weeks"
-              class="create-plan-radio " required>
+            <input type="radio" name="delivery" value="every 2 weeks" id="every-2-weeks" class="every 2 weeks create-plan-radio"
+              required>
             <label for="every-2-weeks" class="create-plan-label">Every 2 weeks
               <span class="create-plan-details">
-                <span class="js-biweekly-price"></span>
-                $9.60 per shipment. Includes free priority shipping.
+                <span class="js-price js-biweekly-price">$</span>
+                per shipment. Includes free priority shipping.
               </span>
             </label>
 
-            <input type="radio" name="delivery" value="every month" id="every-month"
-              class="create-plan-radio " required>
+            <input type="radio" name="delivery" value="every month" id="every-month" class="every month create-plan-radio "
+              required>
             <label for="every-month" class="create-plan-label">Every month
               <span class="create-plan-details">
-                <span class="js-monthly-price"></span>
-                $12.00 per shipment. Includes free priority shipping.
+                <span class="js-price js-monthly-price">$</span>
+                per shipment. Includes free priority shipping.
               </span>
             </label>
 
@@ -266,7 +263,8 @@
                 with a
                 <span class="order-choice js-bean-type">_____</span>
                 type of bean.
-                <span class="order-choice js-quantity">_____</span>
+                <span class="order-choice js-quantity">_____</span> 
+                <span class="js-if-grind">ground ala</span> 
                 <span class="order-choice js-grind">_____</span>, sent to me
                 <span class="order-choice js-delivery">_____</span>.”
               </h3>
@@ -274,29 +272,34 @@
           </div>
           <button type="button" class="button  create-plan-submit js-form-confirm" disabled>Create my plan!</button>
       </form>
-      
+
     </section>
 
 
 
   </main>
-  <div class="overlay  js-overlay"></div>
-    <div class="modal  js-modal">
-     
-      <div class="modal-header">
-        <h3 class="modal-heading">Order Summary</h3>
-      </div>
-      <div class="modal-main">
-        <div class="modal-summary js-modal-summary">
+  <div class="overlay hidden js-overlay"></div>
+  <div class="modal hidden  js-modal">
 
-        </div>
-        <div class="modal-text">
-          <p>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout.</p>
-        </div>
-        <button type="submit" form="subscription-form" class="button modal-btn js-form-submit">Checkout <p class="modal__price">$<span class="js-total"></span> / mo</p></button>
+    <div class="modal-header">
+      <h3 class="modal-heading">Order Summary</h3>
+    </div>
+    <div class="modal-main">
+      <div class="modal-summary js-modal-summary">
+
       </div>
+      <div class="modal-text">
+        Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription
+          discount codes can also be redeemed at the checkout.
+      </div>
+      <div class="checkout">
+        <span class="js-total modal-price"> </span>
+        <button type="submit" form="subscription-form" class="button modal-btn js-form-submit">Checkout </button>
+      </div>
+   
     </div>
   </div>
+
 
   <footer>
     <img src="../assets/footer/logo-f.png">
@@ -318,5 +321,8 @@
   <script src="../js/functions/summary.js"></script>
   <script src="../js/functions/enableButton.js"></script>
   <script src="../js/functions/modal.js"></script>
-  
+  <script src="../js/functions/priceUpdate.js"></script>
+
 </body>
+
+</html>

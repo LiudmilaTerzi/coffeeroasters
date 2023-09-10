@@ -1,4 +1,8 @@
+@import "mixin/plan-button";
 
+.hidden {
+    display: none;
+}
 .overlay {
     position: fixed;
     top: 0;
@@ -32,6 +36,85 @@
 
 
 .modal-main {
-    padding: 24px 24px 16px;
+   width: 100%;
+    padding: 40px 40px;
     background-color: $light-cream;
+    color: $dark-text;
+    font-family: $fraunces-family;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+
+    .modal-summary h3 {
+        
+        font-size: $size24;
+        line-height: $size40;
+        
+        color: $gradient-color;
+
+        .order-choice {
+            color: $green-color;
+            text-transform: capitalize;
+          }
+       
+    }
+    .modal-text  {
+        
+        font-family: $barlow-family;
+        font-size: $size16;
+        line-height: $size26;
+        
+    }
+
+    .checkout {
+        .modal-price {
+            font-size: $size32;
+            line-height: $size36;
+          
+        }
+        
+        .modal-btn {
+            @include plan-button;
+            border: none;
+             margin-left: 1.5rem;
+        }
+    }
+
+   
+}
+
+@media (max-width: 480px) {
+    .modal {
+        width: 90%;
+        height: 95vh;
+        .modal-header {
+            font-size: $size28;
+            line-height: $size32;
+        }
+        .modal-main {
+            padding: 24px;
+
+            .modal-summary h3 {
+                font-size: $size24;
+                line-height: $size40;
+            }
+
+            .modal-text {
+                font-size: $size15;
+                line-height: $size25
+            }
+
+            .checkout {
+                .modal-btn {
+                   width: 100%;
+                     margin-left: 0;
+                }
+            }
+        }
+    }
+
 }

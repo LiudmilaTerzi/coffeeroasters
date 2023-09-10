@@ -1,0 +1,20 @@
+@mixin mobile-xsmall {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+@mixin mobile-small {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+@mixin mobile-medium {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+@mixin mobile-large {
+    font-size: 28px;
+    line-height: 32px;
+}

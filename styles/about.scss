@@ -1,5 +1,5 @@
-@import "../styles/variables";
-@import "../styles/generals";
+@import "./shared/variables";
+@import "./shared/generals";
 
 
 
@@ -7,7 +7,7 @@
 
 @media (min-width: 1000px) {
   body {
-    margin: 2.5rem 5rem;
+    margin: 30px 50px 120px;
 
     .about-us,
     .commitment-text {

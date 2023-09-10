@@ -34,17 +34,16 @@ function updateSummary() {
 
   quantityRadios.forEach(radio => {
     if (radio.checked) {
-        document.querySelector('.js-quantity').textContent = radio.value;
+        document.querySelector('.js-quantity').textContent = radio.value + "g";
 
 
     }
   });
+  
 
   grindRadios.forEach(radio => {
     if (radio.checked) {
         document.querySelector('.js-grind').textContent = radio.value;
-
-
     }
   });
 
