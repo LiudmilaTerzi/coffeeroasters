@@ -106,7 +106,7 @@ ol, ul {
   height: 56px;
   font-family: "Fraunces", sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: bold;
   text-decoration: none;
   background-color: #0E8784;
   color: #FEFCF7;
@@ -119,6 +119,7 @@ ol, ul {
 }
 .modal-main .checkout .modal-btn:hover {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: #66D2CF;
 }
 
 @media (max-width: 480px) {
@@ -179,7 +180,7 @@ ol, ul {
     padding: 100px;
   }
   body .create-plan .create-text {
-    width: 34.76%;
+    width: 45%;
   }
   body .create-plan .create-text h2 {
     font-size: 72px;
@@ -360,6 +361,7 @@ ol, ul {
   }
   body section.subscription .accordion-toggle .create-plan-options .create-plan-label:hover {
     background-color: #FDD6BA;
+    transition: 0.3s ease-in;
     cursor: pointer;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
   }
@@ -405,7 +407,7 @@ ol, ul {
     height: 56px;
     font-family: "Fraunces", sans-serif;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: bold;
     text-decoration: none;
     background-color: #0E8784;
     color: #FEFCF7;
@@ -420,6 +422,7 @@ ol, ul {
   }
   body section.subscription .form-deliveries-submit .create-plan-submit:hover {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #66D2CF;
   }
   body section.subscription .form-deliveries-submit .create-plan-submit:disabled {
     background-color: #E2DEDB;
@@ -601,7 +604,7 @@ ol, ul {
     height: 56px;
     font-family: "Fraunces", sans-serif;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: bold;
     text-decoration: none;
     background-color: #0E8784;
     color: #FEFCF7;
@@ -614,6 +617,7 @@ ol, ul {
   }
   body .form-deliveries-submit .create-plan-submit:hover {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #66D2CF;
   }
   body .form-deliveries-submit .create-plan-submit:disabled {
     background-color: #E2DEDB;

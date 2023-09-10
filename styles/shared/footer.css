@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
 footer {
+  width: 100%;
   margin-top: 20vh;
   height: 120px;
   display: flex;
@@ -9,15 +10,13 @@ footer {
   background-color: #2C343E;
 }
 footer img {
-  width: 236px;
-  height: 26px;
+  width: 19%;
 }
 footer ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  width: 283px;
 }
 footer ul li {
   margin: 0 15px;
@@ -29,8 +28,7 @@ footer ul li a {
   font-family: "Barlow", sans-serif;
   font-size: 12px;
   line-height: 15px;
-  letter-spacing: 0.92px;
-  font-weight: bold;
+  font-weight: 700;
 }
 footer ul li a:hover {
   color: white;
@@ -39,11 +37,10 @@ footer .social-icons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 120px;
+  gap: 24px;
 }
-footer .social-icons img {
-  width: 24px;
-  height: 24px;
+footer .social-icons .icon-s svg:hover path {
+  fill: #FDD6BA;
 }
 
 @media (max-width: 480px) {
@@ -52,7 +49,7 @@ footer .social-icons img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5vh;
+    gap: 6vh;
     margin-top: 30vh;
     height: 346px;
   }
@@ -60,21 +57,21 @@ footer .social-icons img {
     width: 66.6%;
   }
   footer ul {
-    list-style: none;
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 2vh;
+    gap: 3vh;
   }
   footer ul li {
     margin: 0 15px;
   }
   footer ul li a {
-    text-decoration: none;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 15px;
   }
   footer ul li a:hover {
     color: white;
@@ -84,7 +81,6 @@ footer .social-icons img {
     align-items: center;
     justify-content: center;
     width: 36.7%;
-    height: 24px;
   }
   footer .social-icons a {
     display: inline-block;

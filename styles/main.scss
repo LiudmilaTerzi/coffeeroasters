@@ -1,11 +1,10 @@
 @import "shared/variables";
 @import "shared/generals";
-
-
+@import "../styles/shared/mixin/plan-button";
+@import "../styles/shared/mixin/number";
 
 // Base styles
 @media (min-width: 1000px) {
-
   body {
     margin: 50px 50px 120px;
 
@@ -26,15 +25,14 @@
       background-repeat: no-repeat;
       background-size: cover;
       width: 100%;
-      height: 600px;
+      height: auto;
+      padding: 50px;
       margin-top: 5vh;
 
       .content {
         display: flex;
         flex-direction: column;
-        width: 37.75%;
-        height: 60.2%;
-        margin-left: 5vw;
+        width: 42%;
         color: $light-cream;
 
         .main-title {
@@ -51,23 +49,37 @@
     }
 
     .create-plan-button {
-      @include plan-button
+      @include plan-button;
     }
     .coffee-type {
+      width: 87%;
+      margin: 0 auto;
+      position: relative;
       .our-collection {
         background: linear-gradient(to bottom, $gradient-color, transparent);
+        background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
         font-weight: $bold;
-        font-size: 150px;
+        font-size: 12vw;
       }
       .coffee-selection {
         display: flex;
-        gap: 1vw;
-        margin-top: -200px;
-        font-weight: $bold;
+        justify-content: space-evenly;
+        gap: 1%;
+        margin-top: -30vh;
+        font-weight: bold;
+        padding: 0 2%;
         .coffee-type1 {
-          width: 255px;
+          width: 23%;
+          .coffee-img {
+            width: 100%;
+            height: auto;
+          }
+          &:hover {
+            box-shadow: 20px 20px 40px;
+            border-radius: 10px;
+          }
         }
       }
       .coffee-name {
@@ -176,7 +188,7 @@
           width: 33.333%;
 
           h2.number {
-           @include number
+            @include number;
           }
         }
       }
@@ -191,7 +203,6 @@
         line-height: $size32;
         color: $gradient-color;
       }
-   
 
       .step-1 {
         font-size: $size32;
@@ -205,11 +216,8 @@
         width: 80%;
       }
     }
-  
   }
 }
-
-
 
 // Media query for mobile view
 @media (max-width: 480px) {
@@ -248,8 +256,7 @@
           line-height: $size25;
         }
         .create-plan-button {
-          @include plan-button
-       
+          @include plan-button;
         }
       }
     }
@@ -267,6 +274,7 @@
       .our-collection {
         font-size: $size40;
         background: linear-gradient(to bottom, $gradient-color, transparent);
+        background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
         font-weight: $bold;
@@ -414,7 +422,7 @@
           width: 100%;
 
           .number {
-           @include number
+            @include number;
           }
           .step-1 {
             color: $dark-text;
@@ -433,7 +441,7 @@
       }
 
       .create-plan-button {
-        @include plan-button
+        @include plan-button;
       }
     }
   }
