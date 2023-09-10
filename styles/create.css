@@ -6,6 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -30,6 +32,10 @@ a {
 ol, ul {
   list-style-type: none;
   padding-inline-start: 0;
+}
+
+.hidden {
+  display: none;
 }
 
 .overlay {
@@ -63,10 +69,83 @@ ol, ul {
 }
 
 .modal-main {
-  padding: 24px 24px 16px;
+  width: 100%;
+  padding: 40px 40px;
   background-color: #FEFCF7;
+  color: #333D4B;
+  font-family: "Fraunces", sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.modal-main .modal-summary h3 {
+  font-size: 24px;
+  line-height: 40px;
+  color: #83888F;
+}
+.modal-main .modal-summary h3 .order-choice {
+  color: #0E8784;
+  text-transform: capitalize;
+}
+.modal-main .modal-text {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+.modal-main .checkout .modal-price {
+  font-size: 32px;
+  line-height: 36px;
+}
+.modal-main .checkout .modal-btn {
+  display: inline-block;
+  margin-top: 20px;
+  width: 217px;
+  height: 56px;
+  font-family: "Fraunces", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #0E8784;
+  color: #FEFCF7;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 56px;
+  transition: background-color 0.3s ease;
+  border: none;
+  margin-left: 1.5rem;
+}
+.modal-main .checkout .modal-btn:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 480px) {
+  .modal {
+    width: 90%;
+    height: 95vh;
+  }
+  .modal .modal-header {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .modal .modal-main {
+    padding: 24px;
+  }
+  .modal .modal-main .modal-summary h3 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .modal .modal-main .modal-text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .modal .modal-main .checkout .modal-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+}
 @media (min-width: 1000px) {
   body {
     margin: 2.5rem 5rem;
@@ -83,12 +162,6 @@ ol, ul {
     display: none;
     background-color: white;
     overflow: hidden;
-  }
-  body h2,
-  body h3,
-  body h4,
-  body .number {
-    font-family: "Fraunces", sans-serif;
   }
   body .create-plan,
   body .pick {
@@ -343,6 +416,7 @@ ol, ul {
     align-self: center;
     margin-top: 10vh;
     float: right;
+    border: none;
   }
   body section.subscription .form-deliveries-submit .create-plan-submit:hover {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);

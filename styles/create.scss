@@ -24,12 +24,7 @@
       overflow: hidden;
     }
 
-    h2,
-    h3,
-    h4,
-    .number {
-      font-family: $fraunces-family;
-    }
+  
 
     .create-plan,
     .pick {
@@ -298,6 +293,7 @@
           align-self: center;
           margin-top: 10vh;
           float: right;
+          border: none;
           &:disabled {
             background-color: $disabled;
             border: none;
