@@ -7,7 +7,7 @@
     height: 56px;
     font-family: $fraunces-family;
     font-size: 18px;
-    font-weight: $bold;
+    font-weight: bold;
     text-decoration: none;
     background-color: $green-color;
     color: $light-cream;
@@ -18,5 +18,8 @@
 
     &:hover {
       box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+      background-color: $button-hover;
+    
+
     }
-  }
+}

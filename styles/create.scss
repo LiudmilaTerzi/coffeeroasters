@@ -41,7 +41,7 @@
       color: $light-cream;
       padding: 100px;
       .create-text {
-        width: 34.76%;
+        width: 45%;
 
         h2 {
           font-size: $size72;
@@ -236,6 +236,7 @@
 
             &:hover {
               background-color: $light-orange;
+              transition: 0.3s ease-in;
               cursor: pointer;
               box-shadow: 5px 5px 10px rgba(0,0,0,.7);
             }
