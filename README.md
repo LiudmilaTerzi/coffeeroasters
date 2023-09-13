@@ -17,7 +17,7 @@ The Coffeeroasters website is designed to provide a delightful user experience f
 
 ### Screenshot
 ![](./assets/screenshot/screenshot_desktop.png)
-![](./assets/screenshot/screenshot_mobile.png.png)
+![](./assets/screenshot/screenshot_mobile.png)
 
 
 ## My process
