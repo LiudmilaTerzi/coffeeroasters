@@ -16,7 +16,7 @@ Welcome to the Coffeeroasters website project! This project focuses on creating 
 The Coffeeroasters website is designed to provide a delightful user experience for coffee enthusiasts. It features a visually appealing design and user-friendly navigation. Here's a brief overview of the project's key sections:
 
 ### Screenshot
-![](./assets/screenshot/screenshot_desktop.png)
+![](./assets/screenshot/screenshot_desktop.png);
 ![](./assets/screenshot/screenshot_mobile.png)
 
 
