@@ -1,0 +1,68 @@
+@import "shared/generals";
+@import "shared/variables";
+@import "shared/mixin/plan-button";
+
+
+body  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    font-weight: bold;
+}
+
+.container {
+    
+    background-color: #ECE9E0;
+    width: 90vw;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus {
+    flex: 0 0 calc(50% - 10px); 
+    width: calc(50% - 10px); 
+    padding: 6px; 
+    margin-bottom: 10px; 
+    background-color: $light-cream;
+    border: 1px solid $dark-text; 
+    border-radius: 5px;
+    outline: none; 
+}
+
+
+.form-group label {
+    flex: 0 0 calc(50% - 10px); 
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; 
+}
+
+    .address-inputs input[type="text"],
+  .address-inputs select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid $dark-text;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+button {
+    @include plan-button;
+}
+
+
+
+

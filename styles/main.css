@@ -109,9 +109,10 @@ ol, ul {
     display: flex;
     justify-content: space-evenly;
     gap: 1%;
-    margin-top: -30vh;
     font-weight: bold;
     padding: 0 2%;
+    position: absolute;
+    transform: translateY(50%);
   }
   body .coffee-type .coffee-selection .coffee-type1 {
     width: 23%;
@@ -135,7 +136,7 @@ ol, ul {
     width: 100%;
     justify-content: start;
     background-color: #2C343E;
-    margin-top: 20vh;
+    margin-top: 30vh;
     border-radius: 10px;
     height: 577px;
   }

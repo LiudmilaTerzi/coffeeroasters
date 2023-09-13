@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #FEFCF7;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Fraunces", sans-serif;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.container {
+  background-color: #ECE9E0;
+  width: 90vw;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-group input[type=text],
+.form-group input[type=email],
+.form-group input[type=tel],
+.form-group input[type=text]:focus,
+.form-group input[type=email]:focus,
+.form-group input[type=tel]:focus {
+  flex: 0 0 calc(50% - 10px);
+  width: calc(50% - 10px);
+  padding: 6px;
+  margin-bottom: 10px;
+  background-color: #FEFCF7;
+  border: 1px solid #333D4B;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-group label {
+  flex: 0 0 calc(50% - 10px);
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.address-inputs input[type=text],
+.address-inputs select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #333D4B;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  display: inline-block;
+  margin-top: 20px;
+  width: 217px;
+  height: 56px;
+  font-family: "Fraunces", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #0E8784;
+  color: #FEFCF7;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 56px;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: #66D2CF;
+}/*# sourceMappingURL=ckeckout.css.map */
