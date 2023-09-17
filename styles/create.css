@@ -113,6 +113,7 @@ ol, ul {
   border-radius: 5px;
   text-align: center;
   line-height: 56px;
+  border: none;
   transition: background-color 0.3s ease;
   border: none;
   margin-left: 1.5rem;
@@ -373,7 +374,7 @@ ol, ul {
     line-height: 26px;
   }
   body section.subscription .accordion-toggle .active .create-plan-icon {
-    transition: all 200ms ease-in-out;
+    transition: all 300ms ease-in-out;
     transform: rotate(-180deg);
   }
   body section.subscription .form-deliveries-submit .order-summary {
@@ -414,11 +415,11 @@ ol, ul {
     border-radius: 5px;
     text-align: center;
     line-height: 56px;
+    border: none;
     transition: background-color 0.3s ease;
     align-self: center;
     margin-top: 10vh;
     float: right;
-    border: none;
   }
   body section.subscription .form-deliveries-submit .create-plan-submit:hover {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -426,7 +427,6 @@ ol, ul {
   }
   body section.subscription .form-deliveries-submit .create-plan-submit:disabled {
     background-color: #E2DEDB;
-    border: none;
   }
 }
 @media (max-width: 480px) {
@@ -611,6 +611,7 @@ ol, ul {
     border-radius: 5px;
     text-align: center;
     line-height: 56px;
+    border: none;
     transition: background-color 0.3s ease;
     align-self: center;
     margin-top: 10vh;

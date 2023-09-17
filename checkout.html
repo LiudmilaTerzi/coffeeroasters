@@ -1,62 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Subscription Checkout</title>
-    <link rel="stylesheet" href="./styles/ckeckout.css">
- 
+    <link rel="icon" type="image/png" href="./assets/logo/beans.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/checkout.css">
 </head>
+
 <body>
-    <div class="container">
-        <img src="./assets/logo/logo.png">
-        <h2>Join the Caffeine Adventure!</h2>
-        <p>Get ready for a coffee journey like no other. Our carefully curated selection of premium 
-            coffee beans will tantalize your taste buds and keep you caffeinated for your daily adventures.</p>
-        <form action="subscribe_process.php" method="POST">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="surname">Surname:</label>
-                <input type="text" id="surname" name="surname" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="address">Address:</label>
-                <div class="address-inputs">
-                    <input type="text" id="city" name="city" placeholder="City" required>
-                    <input type="text" id="street" name="street" placeholder="Street" required>
-                    <input type="text" id="postal-code" name="postal-code" placeholder="ZIP/Postal Code" required>
-                    <select id="country" name="country" required>
-                        <option value="">Select Country</option>
-                        <option value="Austria">Austria</option>
-                        <option value="Belgium">Belgium</option>
-                        <option value="Bulgaria">Bulgaria</option>
-                        <option value="France">France</option>
-                        <option value="Germany">Germany</option>
-                        <option value="Italia">Italia</option>
-                        <option value="Romania">Romania</option>
-                        <option value="Spania">Spania</option>
-                        <option value="Switzerland">Switzerland</option>
-                        <option value="UK">UK</option>
-                    </select>
+    <div class="checkout-container">
+        <div class="checkout-logo">
+            <img class="checkout-logo-img" src="./assets/logo/logo.png" alt="subscription logo">
+            <p>Don't worry, we won't share your personal information with anyone. We value your privacy as much as we
+                value our coffee beans.</p>
+        </div>
+        <div id="checkout-summary">
+
+            <!-- This is where the summary will be added -->
+        </div>
+
+
+
+        <form action="index.html" method="POST" id="payment-form">
+            <div class="left-section">
+                <div class="form-group">
+                    <label for="fname"><i class="fa fa-user"></i>Full Name:</label>
+                    <input type="text" id="fname" name="name" placeholder="Albert B. Potter" required>
+                    <span id="name-error" class="error"></span>
                 </div>
+                <div class="form-group">
+                    <label for="email"><i class="fa fa-envelope"></i>Email:</label>
+                    <input type="email" id="email" name="email" placeholder="albert@example.com" required>
+                    <span id="email-error" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="phone"><i class="fa fa-phone"></i>Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span id="phone-error" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="address"><i class="fa fa-address-card"></i>Address:</label>
+                    <div class="address-inputs">
+                        <input type="text" id="city" name="city" placeholder="City Street Name No" required>
+
+                        <input type="text" id="postal-code" name="postal-code" placeholder="ZIP/Postal Code" required>
+                        <select id="country" name="country" required>
+                            <option value="">Select Country</option>
+                            <option value="au">Austria</option>
+                            <option value="be">Belgium</option>
+                            <option value="bg">Bulgaria</option>
+                            <option value="fr">France</option>
+                            <option value="de">Germany</option>
+                            <option value="it">Italia</option>
+                            <option value="ro">Romania</option>
+                            <option value="es">Spain</option>
+                            <option value="ch">Switzerland</option>
+                            <option value="uk">UK</option>
+                        </select>
+                    </div>
+                </div>
+                <h3>Join the Caffeine Adventure!</h3>
+                <button type="submit" id="subscribeButton">Subscribe Now</button>
+
             </div>
-            
-           
-            <button type="submit">Subscribe Now</button>
+            <div class="right-section">
+
+                <div class="right-section-payment">
+                    <div class="form-group">
+                        <h4>Payment Options</h4>
+                        <label for="payment-method">Select Payment Method:</label>
+                        <select id="payment-method" name="payment-method" required>
+                            <option value="select-payment">Select</option>
+                            <option value="card">Credit Card</option>
+                            <option value="cash">Cash on Delivery</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group" id="credit-card-details">
+                        <h4><i class="fa fa-credit-card-alt"></i>Credit Card Information</h4>
+                        <label for="card-number">Card Number:</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="1111-2222-3333-4444"
+                            required>
+                        <label for="expiration-date">Expiration Date:</label>
+                        <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" required>
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="3 digits" required>
+                    </div>
+                </div>
+
+            </div>
         </form>
-        <p>Don't worry, we won't share your personal information with anyone.
-             We value your privacy as much as we value our coffee beans.</p>
+
+
     </div>
+    <script src="./js/functions/checkout.js"></script>
+    <script src="./js/functions/validateCard.js"></script>
+
 </body>
+
 </html>
