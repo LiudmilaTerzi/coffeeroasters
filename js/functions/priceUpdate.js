@@ -97,10 +97,7 @@ function updateTotalPrice() {
     totalPriceTextarea.style.display = "inline"; 
   }
 
-  // } else {
-  //   // Handle the case where not all options are selected.
-  //   totalPriceTextarea.value = "$";
-  // }
+
 }
 
 

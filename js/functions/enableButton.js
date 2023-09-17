@@ -60,6 +60,8 @@ function updateSelectedValues(event) {
    
   }
 
+ 
+
   // Check the count of selected values and enable/disable the submit button accordingly
   if (
     selectedValues.length === 5 ||
