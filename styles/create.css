@@ -359,7 +359,7 @@ ol, ul {
     align-items: center;
     text-align: left;
     width: 100%;
-    gap: 20px;
+    gap: 1rem;
   }
   body section.subscription .accordion-toggle .create-plan-options legend {
     display: none;
@@ -373,8 +373,7 @@ ol, ul {
   }
   body section.subscription .accordion-toggle .create-plan-options .create-plan-label {
     width: 31.23%;
-    height: -moz-max-content;
-    height: max-content;
+    height: 250px;
     background-color: #F4F1EB;
     border-radius: 10px;
     display: flex;
@@ -385,7 +384,7 @@ ol, ul {
     line-height: 32px;
     color: #333D4B;
     font-weight: 700;
-    padding: 1.5rem;
+    padding: 2rem;
   }
   body section.subscription .accordion-toggle .create-plan-options .create-plan-label:hover {
     background-color: #FDD6BA;
@@ -395,7 +394,7 @@ ol, ul {
   }
   body section.subscription .accordion-toggle .create-plan-options .create-plan-label .create-plan-details {
     margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     font-family: "Barlow", sans-serif;
     font-size: 16px;
     line-height: 26px;
