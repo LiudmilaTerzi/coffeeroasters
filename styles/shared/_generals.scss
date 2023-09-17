@@ -10,7 +10,17 @@ body {
   background-color: $light-cream;
 }
 
+@media (min-width: 1000px) {
+  body {
+    margin: 50px;
+  }
+}
 
+@media (max-width: 480px) {
+  body {
+    margin: 30px 6.4% 10vh;
+  }
+}
 
 
 h1, h2, h3, h4 {

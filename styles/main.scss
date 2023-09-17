@@ -1,12 +1,13 @@
 @import "shared/variables";
 @import "shared/generals";
+@import "shared/scroll";
 @import "../styles/shared/mixin/plan-button";
 @import "../styles/shared/mixin/number";
 
 // Base styles
 @media (min-width: 1000px) {
   body {
-    margin: 50px 50px 120px;
+    
 
     .coffee-type,
     .why-us,
@@ -36,14 +37,14 @@
         color: $light-cream;
 
         .main-title {
-          font-size: $size72;
-          line-height: $size72;
+          font-size: 72px;
+          line-height: 72px;
           text-shadow: 0 0 1px black;
         }
 
         .info {
-          font-size: $size16;
-          line-height: $size26;
+          font-size: 16px;
+          line-height: 26px;
         }
       }
     }
@@ -87,10 +88,10 @@
         }
       }
       .coffee-name {
-        font-size: $size24;
+        font-size: 24px;
       }
       .coffee-info {
-        font-size: $size16;
+        font-size: 16px;
       }
     }
 
@@ -109,13 +110,13 @@
         margin-top: 5vh;
 
         h2 {
-          font-size: $size40;
-          line-height: $size48;
+          font-size: 40px;
+          line-height: 48px;
         }
 
         p {
-          font-size: $size16;
-          line-height: $size26;
+          font-size: 16px;
+          line-height: 26px;
         }
       }
       .arguments {
@@ -140,10 +141,10 @@
           h3 {
             margin-top: 5vh;
 
-            font-size: $size24;
+            font-size: 24px;
           }
           p {
-            font-size: $size15;
+            font-size: 15px;
             width: 80%;
           }
         }
@@ -203,20 +204,20 @@
         font-weight: $bold;
       }
       h3 {
-        font-size: $size24;
-        line-height: $size32;
+        font-size: 24px;
+        line-height: 32px;
         color: $gradient-color;
       }
 
       .step-1 {
-        font-size: $size32;
+        font-size: 32px;
         color: $dark-text;
-        line-height: $size36;
+        line-height: 36px;
         width: 65%;
       }
       .step-2 {
-        font-size: $size16;
-        line-height: $size26;
+        font-size: 16px;
+        line-height: 26px;
         width: 80%;
       }
     }
@@ -226,7 +227,7 @@
 // Media query for mobile view
 @media (max-width: 480px) {
   body {
-    margin: 30px 6.4% 10vh;
+    m
     .main-content {
       background-image: url("../assets/home/Bitmap.png");
       margin-top: 30px;
@@ -247,8 +248,8 @@
         color: $light-cream;
 
         .main-title {
-          font-size: $size40;
-          line-height: $size40;
+          font-size: 40px;
+          line-height: 40px;
           margin-top: 20%;
           font-family: $fraunces-family;
           text-shadow: 0 0 1px black;
@@ -256,8 +257,8 @@
 
         .info {
           width: 85.3%;
-          font-size: $size15;
-          line-height: $size25;
+          font-size: 15px;
+          line-height: 25px;
         }
         .create-plan-button {
           @include plan-button;
@@ -276,7 +277,7 @@
       margin-top: 10vh;
 
       .our-collection {
-        font-size: $size40;
+        font-size: 40px;
         background: linear-gradient(to bottom, $gradient-color, transparent);
         background-clip: text;
         -webkit-background-clip: text;
@@ -293,15 +294,15 @@
           margin-top: 5vh;
         }
         .coffee-name {
-          font-size: $size24;
-          line-height: $size32;
+          font-size: 24px;
+          line-height: 32px;
           font-weight: $bold;
         }
         .coffee-info {
           width: 75vw;
           text-align: center;
-          font-size: $size15;
-          line-height: $size25;
+          font-size: 15px;
+          line-height: 25px;
         }
       }
     }
@@ -328,13 +329,13 @@
         width: 85%;
 
         h2 {
-          font-size: $size24;
-          line-height: $size24;
+          font-size: 24px;
+          line-height: 24px;
           margin-top: 5vh;
         }
         p {
-          font-size: $size15;
-          line-height: $size25;
+          font-size: 15px;
+          line-height: 25px;
         }
       }
 
@@ -381,10 +382,10 @@
             h3 {
               margin-top: 5vh;
 
-              font-size: $size24;
+              font-size: 24px;
             }
             p {
-              font-size: $size15;
+              font-size: 15px;
               width: 80%;
             }
           }
@@ -408,7 +409,7 @@
 
       h3 {
         font-weight: $bold;
-        font-size: $size24;
+        font-size: 24px;
         color: $gradient-color;
       }
       .do-steps {
@@ -430,14 +431,14 @@
           }
           .step-1 {
             color: $dark-text;
-            font-size: $size28;
-            line-height: $size28;
+            font-size: 28px;
+            line-height: 28px;
             font-weight: $bold;
             width: 100%;
           }
           .step-2 {
-            font-size: $size15;
-            line-height: $size25;
+            font-size: 15px;
+            line-height: 25px;
 
             width: 100%;
           }

@@ -29,8 +29,8 @@
     background-color: $background-color;
     padding: 1rem 1.5rem;
     color: $light-cream;
-    font-size: $size40;
-    line-height: $size48;
+    font-size: 40px;
+    line-height: 48px;
 }
 
 
@@ -51,8 +51,8 @@
 
     .modal-summary h3 {
         
-        font-size: $size24;
-        line-height: $size40;
+        font-size: 24px;
+        line-height: 40px;
         
         color: $gradient-color;
 
@@ -65,15 +65,15 @@
     .modal-text  {
         
         font-family: $barlow-family;
-        font-size: $size16;
-        line-height: $size26;
+        font-size: 16px;
+        line-height: 26px;
         
     }
 
     .checkout {
         .modal-price {
-            font-size: $size32;
-            line-height: $size36;
+            font-size: 32px;
+            line-height: 36px;
           
         }
         
@@ -92,19 +92,19 @@
         width: 90%;
         height: 95vh;
         .modal-header {
-            font-size: $size28;
-            line-height: $size32;
+            font-size: 28px;
+            line-height: 32px;
         }
         .modal-main {
             padding: 24px;
 
             .modal-summary h3 {
-                font-size: $size24;
-                line-height: $size40;
+                font-size: 24px;
+                line-height: 40px;
             }
 
             .modal-text {
-                font-size: $size15;
+                font-size: 15px;
                 line-height: $size25
             }
 

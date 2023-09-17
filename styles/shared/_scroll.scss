@@ -1,0 +1,23 @@
+@import "variables";
+
+#scrollToTopButton {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    padding: 15px;
+    background-color: $green-color;
+    color: #fff;
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+        background-color: $button-hover;
+      
+  
+      }
+  }
+  
