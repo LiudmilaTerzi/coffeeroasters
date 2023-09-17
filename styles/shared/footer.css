@@ -9,9 +9,6 @@ footer {
   justify-content: space-evenly;
   background-color: #2C343E;
 }
-footer img {
-  width: 19%;
-}
 footer ul {
   list-style: none;
   margin: 0;
@@ -53,7 +50,7 @@ footer .social-icons .icon-s svg:hover path {
     margin-top: 30vh;
     height: 346px;
   }
-  footer img {
+  footer .footer-logo img {
     width: 66.6%;
   }
   footer ul {

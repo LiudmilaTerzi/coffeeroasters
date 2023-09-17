@@ -73,7 +73,7 @@
 
     .fa-bars {
       position: absolute;
-      left: 90%;
+      left: 88%;
       color: $dark-text;
       display: inline-block;
       height: 30px;
@@ -139,14 +139,18 @@
         background-color: $dark-text;
         transform-origin: center;
         transform: translate(-50%, -50%);
+        transition: transform 300ms ease-in-out;
+        
       }
 
       .fa-bars::before {
         transform: translate(-50%, -50%) rotate(45deg);
+        
       }
 
       .fa-bars::after {
         transform: translate(-50%, -50%) rotate(-45deg);
+        
       }
     }
   } 

@@ -93,7 +93,7 @@ ol, ul {
   }
   header .fa-bars {
     position: absolute;
-    left: 90%;
+    left: 88%;
     color: #333D4B;
     display: inline-block;
     height: 30px;
@@ -145,6 +145,7 @@ ol, ul {
     background-color: #333D4B;
     transform-origin: center;
     transform: translate(-50%, -50%);
+    transition: transform 300ms ease-in-out;
   }
   header.open-menu .fa-bars::before {
     transform: translate(-50%, -50%) rotate(45deg);
