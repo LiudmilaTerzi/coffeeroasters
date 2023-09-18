@@ -6,7 +6,7 @@
 @import "shared/modal";
 
 //Base style
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   body {
    
 
@@ -309,7 +309,12 @@
   }
 }
 
-@media (max-width: 480px) {
+/* Medium screens  tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+}
+
+@media (max-width: 767px) {
   body {
     
 

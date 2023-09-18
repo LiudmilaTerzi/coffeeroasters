@@ -5,28 +5,30 @@
 
 
 
-         
-          #goBackButton {
-            background-color: transparent;
-            color: $dark-text;
-            font-size: $fraunces-family;
-            padding: 10px 20px; 
-            border: none; 
-            cursor: pointer; 
-            font-size: 12px; 
-            
+#goBackButton {
+    background-color: transparent;
+    color: $dark-text;
+    font-size: $fraunces-family;
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 12px; 
+    
 
-            &:hover {
-                box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
-                background-color: $button-hover;
-                border-radius: 10px;
-            }
-           
-        }
+    &:hover {
+        box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+        background-color: $button-hover;
+        border-radius: 10px;
+    }
+   
+}
+
+         
+
 
        
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   body {
  
 
@@ -131,7 +133,13 @@
   }
 }
 
-@media (max-width: 480px) {
+
+/* Medium screens  tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+}
+
+@media (max-width: 767px) {
   body {
    
 

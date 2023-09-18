@@ -6,7 +6,7 @@
 
 //Base style
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   body {
     
 
@@ -150,7 +150,12 @@
   }
 }
 
-@media (max-width: 480px) {
+/* Medium screens  tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+}
+
+@media (max-width: 767px) {
   body {
     
     .about-us,
@@ -216,6 +221,7 @@
         width: 100%;
         height: auto;
         color: $dark-text;
+       
 
         h2 {
           font-size: 32px;
@@ -225,6 +231,7 @@
         p {
           font-size: 15px;
           line-height: 25px;
+         
         }
       }
     }
@@ -263,6 +270,7 @@
         p {
           font-size: 15px;
           line-height: 25px;
+          padding-bottom: 50px;
         }
       }
     }

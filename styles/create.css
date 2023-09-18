@@ -178,7 +178,7 @@ ol, ul {
     margin-left: 0;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   body .create-plan,
   body .line-step-container,
   body .step-1 {
@@ -455,7 +455,8 @@ ol, ul {
     background-color: #E2DEDB;
   }
 }
-@media (max-width: 480px) {
+/* Medium screens  tablets) */
+@media (max-width: 767px) {
   body .create-plan,
   body .pick,
   body .steps,

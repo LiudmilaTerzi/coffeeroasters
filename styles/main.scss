@@ -5,7 +5,7 @@
 @import "../styles/shared/mixin/number";
 
 // Base styles
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   body {
     
 
@@ -224,8 +224,14 @@
   }
 }
 
+
+/* Medium screens  tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+}
+
 // Media query for mobile view
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   body {
     
     .main-content {

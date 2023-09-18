@@ -62,7 +62,7 @@ ol, ul {
   background-color: #66D2CF;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   body .coffee-type,
   body .why-us,
   body .argument,
@@ -275,7 +275,8 @@ ol, ul {
     width: 80%;
   }
 }
-@media (max-width: 480px) {
+/* Medium screens  tablets) */
+@media (max-width: 767px) {
   body .main-content {
     background-image: url("../assets/home/Bitmap.png");
     margin-top: 30px;

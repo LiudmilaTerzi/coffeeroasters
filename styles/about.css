@@ -58,7 +58,7 @@ ol, ul {
   background-color: #66D2CF;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   body .about-us,
   body .commitment-text {
     display: flex;
@@ -181,7 +181,8 @@ ol, ul {
     margin-top: 30vh;
   }
 }
-@media (max-width: 480px) {
+/* Medium screens  tablets) */
+@media (max-width: 767px) {
   body .about-us,
   body .commitment,
   body .quality,
@@ -281,6 +282,7 @@ ol, ul {
   body .quality .quality-text p {
     font-size: 15px;
     line-height: 25px;
+    padding-bottom: 50px;
   }
   body .headquarters {
     width: 100%;

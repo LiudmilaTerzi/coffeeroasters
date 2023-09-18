@@ -75,7 +75,7 @@ ol, ul {
   border-radius: 10px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   body {
     /* General styles */
   }
@@ -182,7 +182,8 @@ ol, ul {
     background-color: #66D2CF;
   }
 }
-@media (max-width: 480px) {
+/* Medium screens  tablets) */
+@media (max-width: 767px) {
   body .checkout-container {
     display: flex;
     flex-direction: column;

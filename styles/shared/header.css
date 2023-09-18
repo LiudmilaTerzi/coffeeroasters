@@ -38,7 +38,7 @@ ol, ul {
   padding-inline-start: 0;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   header {
     display: flex;
     align-items: center;
@@ -81,7 +81,8 @@ ol, ul {
     transition: 0.2s ease-in;
   }
 }
-@media (max-width: 480px) {
+/* Medium screens  tablets) */
+@media (max-width: 767px) {
   header {
     color: #333D4B;
     width: 100%;
