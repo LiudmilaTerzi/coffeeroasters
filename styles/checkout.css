@@ -60,10 +60,16 @@ ol, ul {
   background-color: #66D2CF;
 }
 
+#error-message, #promo-error-message {
+  color: red;
+  display: none;
+}
+
 #goBackButton {
   background-color: transparent;
   color: #333D4B;
-  font-size: "Fraunces", sans-serif;
+  font-family: "Fraunces", sans-serif;
+  font-weight: bold;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -73,6 +79,34 @@ ol, ul {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   background-color: #66D2CF;
   border-radius: 10px;
+}
+
+.subscription-promo {
+  text-align: center;
+}
+.subscription-promo input[type=text] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #0E8784;
+  border-radius: 3px;
+}
+.subscription-promo #apply-promo-button {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #FEFCF7;
+  color: #333D4B;
+  font-family: "Fraunces", sans-serif;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.subscription-promo #apply-promo-button:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: #66D2CF;
 }
 
 @media (min-width: 1024px) {
@@ -105,7 +139,7 @@ ol, ul {
     font-size: 1rem;
   }
   body .checkout-container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -189,6 +223,7 @@ ol, ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 20px;
     position: relative;
   }
@@ -204,7 +239,6 @@ ol, ul {
   body .checkout-container .checkout-logo p {
     font-weight: bold;
     font-style: italic;
-    text-align: center;
     font-size: 1rem;
     line-height: 1rem;
   }
@@ -228,6 +262,13 @@ ol, ul {
   body .checkout-container .left-section .form-group {
     text-align: center;
     margin-top: 10px;
+  }
+  body .checkout-container .left-section input[type=text], body .checkout-container .left-section input[type=email],
+  body .checkout-container .left-section input[type=tel] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #0E8784;
+    border-radius: 3px;
   }
   body .checkout-container .left-section .form-group input,
   body .checkout-container select {
@@ -253,9 +294,9 @@ ol, ul {
   body .checkout-container .right-section #credit-card-details input[type=text] {
     width: 90%;
     padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #0E8784;
+    border-radius: 3px;
   }
   body .checkout-container .right-section #credit-card-details label {
     display: block;

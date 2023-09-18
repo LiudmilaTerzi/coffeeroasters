@@ -41,7 +41,7 @@
                 <div class="form-group">
                     <label for="phone"><i class="fa fa-phone"></i>Phone Number:</label>
                     <input type="tel" id="phone" name="phone" required>
-                    <p id="error-message" style="color: red; display: none;">Please type only numbers.</p>
+                    <p id="error-message" >Please type only numbers.</p>
                     
                 </div>
                 <div class="form-group">
@@ -65,6 +65,17 @@
                         </select>
                     </div>
                 </div>
+
+                <div class="subscription-promo">
+                    <h4 id="promo-toggle">Have a Promo Code?</h4>
+                    <div id="promo-content" style="display: none;">
+                        <p>Enter your promo code below to get a discount on your subscription:</p>
+                        <input type="text" id="promo-code" name="promo-code" placeholder="PROMO CODE">
+                        <button id="apply-promo-button">Apply</button>
+                        <p id="promo-error-message" >Invalid promo code. Please try again.</p>
+                    </div>
+                </div>
+                
                 <div class="subscribe">
                     <h3>Join the Caffeine Adventure!</h3>
                     <button type="submit" id="subscribeButton">Subscribe Now</button>
@@ -98,6 +109,8 @@
                 </div>
 
             </div>
+
+           
         </form>
 
 
@@ -108,6 +121,7 @@
     <script src="./js/functions/validatePhone.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/functions/goBack.js"></script>
+    <script src="./js/functions/promoCode.js"></script>
 
 </body>
 

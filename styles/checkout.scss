@@ -5,10 +5,16 @@
 
 
 
+#error-message, #promo-error-message {
+  color: red; display: none;
+}
+
 #goBackButton {
     background-color: transparent;
     color: $dark-text;
-    font-size: $fraunces-family;
+    font-family: $fraunces-family;
+    font-weight: bold;
+    
     padding: 10px 20px; 
     border: none; 
     cursor: pointer; 
@@ -22,6 +28,46 @@
     }
    
 }
+
+.subscription-promo {
+  text-align: center;
+ 
+
+  input[type="text"] {
+   
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid $green-color;
+        border-radius: 3px;
+  }
+
+  #apply-promo-button {
+    width: fit-content;
+    background-color: $light-cream;
+    color: $dark-text;
+    font-family: $fraunces-family;
+    padding: 10px 10px; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 12px; 
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  
+
+  
+    &:hover {
+      box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+      background-color: $button-hover;
+     
+  }
+  
+  }
+  
+
+}
+
+
 
          
 
@@ -62,7 +108,7 @@
 
     /* General styles */
     .checkout-container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
       overflow: hidden;
 
@@ -148,6 +194,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
       gap: 20px;
       position: relative;
        
@@ -165,7 +212,7 @@
       .checkout-logo p {
         font-weight: bold;
         font-style: italic;
-        text-align: center;
+        
         font-size: 1rem;
         line-height: 1rem;
       }
@@ -188,23 +235,34 @@
         border-radius: 10px;
           background: #f2f2f2;
           padding: 10px;
+
+           .form-group {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        input[type="text"],  input[type="email"],
+        input[type="tel"]{
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid $green-color;
+          border-radius: 3px;
+
+        }
        
 
         
       }
 
-      .left-section .form-group {
-        text-align: center;
-        margin-top: 10px;
-    }
+   
 
     
     .left-section .form-group input,
-    select {
-        width: 90%;
-        padding: 8px;
-        margin: 5px 0;
-    }
+        select {
+            width: 90%;
+            padding: 8px;
+            margin: 5px 0;
+        }
 
    
     .right-section {
@@ -226,10 +284,12 @@
 
         #credit-card-details input[type="text"] {
             width: 90%;
+          
+
             padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+          margin-bottom: 10px;
+          border: 1px solid $green-color;
+          border-radius: 3px;
         }
         
         /* Style for labels in the credit card section */
